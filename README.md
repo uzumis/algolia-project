@@ -12,6 +12,9 @@ https://www.algolia.com/doc/ui-libraries/autocomplete/integrations/with-instants
 #How to build:
 
 If you don't have the npm dependency
+
 npm install 
+
 To run the webpack server
+
 npm run start
