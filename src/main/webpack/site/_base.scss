@@ -1,0 +1,58 @@
+//== Base
+
+html, body {
+  margin: 0;
+  font-size:   $font-size;
+  font-family: $font-family;
+  line-height: $font-height;
+  color:       $color-foreground;
+  background:  $color-background;
+  position: relative;
+  overflow-x: hidden;
+  user-select: none;
+  min-height: 100vh;
+
+  @media (prefers-color-scheme: dark) {
+      color:       $color-foreground-dark;
+      background:  $color-background-dark;
+  }
+
+  a {
+    text-decoration: none;
+
+    label {
+      cursor: pointer;
+    }
+  }
+
+  ul, ol, dl, dd, dt, p {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  dl, dd, dt, p {
+    font-weight: normal;
+  }
+
+  hr {
+    opacity: 1;
+  }
+}
+
+a {
+  color: $color-link;
+
+  @media (prefers-color-scheme: dark) {
+      color: $color-link-dark;
+  }
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+}
+
+button, input, optgroup, select, textarea {
+  font: inherit;
+}

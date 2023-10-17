@@ -1,0 +1,25 @@
+.ads__container {
+    max-width: $max-width;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    background-color: var(--#{$txt_prefix}-light-tertiary);
+    margin: 16px 0 16px 0;
+    
+}
+​
+.ads__container--item {
+
+    border-radius: 4px;
+    text-align: center;
+    margin: 15px;
+}
+​
+.ads {
+    border-radius: 8px;
+    //border: 1px solid var(--#{$txt_prefix}-light-primary);
+    //background-color: var(--#{$txt_prefix}-light-secondary);
+    margin: auto;
+    padding: 15px;
+}

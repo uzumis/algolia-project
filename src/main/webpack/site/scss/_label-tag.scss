@@ -1,0 +1,32 @@
+.label__tag {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+	border-radius: 8px;
+	border: 1px solid var(--#{$txt_prefix}-light-primary);
+}
+
+.label__tag-xl {
+	height: 32px;
+	padding: 0px 24px;
+}
+
+.label__tag-lg {
+	height: 26px;
+	padding: 0px 24px;
+}
+
+.label__tag-sm {
+	height: 22px;
+	padding: 0px 16px;
+}
+
+.tag__font{
+color: var(--#{$txt_prefix}-dark-tertiary);
+text-align: center;
+font-size: var(--#{$txt_prefix}-font-size-xs);
+font-style: normal;
+font-weight: var(--#{$txt_prefix}-bold);
+line-height: 16px;
+}

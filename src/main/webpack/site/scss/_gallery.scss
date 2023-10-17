@@ -1,0 +1,108 @@
+.gallery__container {
+	display: flex;
+	position: relative;
+	max-width: 620px;
+	height: auto;
+	flex-direction: column;
+
+  .pagination {
+    position: absolute;
+    bottom: 74px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 16px;
+
+    .pagination__container {
+      display: flex;
+      padding: 8px;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      border-radius: 12px;
+      background: var(--#{$txt_prefix}-light-tertiary);
+      width: 100%;
+    }
+  }
+}
+.gallery_highlight{
+		max-width: 728px;
+}
+.description__wrapper {
+	display: flex;
+	width: 100%;
+	padding: 16px;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 8px;
+	border-radius: 0px 0px 8px 8px;
+	background: var(--#{$txt_prefix}-light-tertiary);
+}
+
+.gallery__image {
+	width: 100%;
+	height: auto;
+	border-radius: 8px 8px 0px 0px;
+}
+
+.gallery__description {
+	color: var(--#{$txt_prefix}-dark-tertiary);
+	font-size: var(--#{$txt_prefix}-font-size-sm);
+	font-style: normal;
+	font-weight: var(--#{$txt_prefix}-medium);
+	line-height: 18px;
+	align-self: stretch;
+
+}
+
+.gallery__credits {
+	color: var(--#{$txt_prefix}-dark-tertiary);
+	text-align: right;
+	align-self: stretch;
+	font-size: var(--#{$txt_prefix}-font-size-xs);;
+	font-style: normal;
+	font-weight: var(--#{$txt_prefix}-regular);
+	line-height: 16px;
+}
+
+.point {
+	cursor: pointer;
+	width: 8px;
+	height: 8px;
+	border-radius: 4px;
+	background: var(--#{$txt_prefix}-light-primary);
+}
+
+.is-active {
+	cursor: default;
+	background: var(--#{$txt_prefix}-dark-tertiary);
+}
+
+
+.pagination span {
+	display: inline-block;
+	cursor: pointer;
+	font-size: 1.2em;
+}
+
+.arrow {
+	position: absolute;
+	top: 40%;
+	z-index: 1;
+	cursor: pointer;
+	transform: translateY(-50%);
+	width: 36px;
+	height: 36px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.arrow-left {
+	left: 2%;
+	background-image: url(images/gallery/image/carousel-arrow.svg);
+}
+
+.arrow-right {
+	right: 2%;
+	transform: translateY(-50%) rotate(180deg);
+	background-image: url(images/gallery/image/carousel-arrow.svg);
+}

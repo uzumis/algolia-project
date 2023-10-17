@@ -1,0 +1,124 @@
+.embed__container {
+	max-width: 1280px;
+	display: flex;
+	flex-flow: row wrap;
+	background: var( --#{$txt_prefix}-light-tertiary);
+	border-radius: 8px;
+  }
+  
+  .embed__wrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+  }
+  
+  .embed__player {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+  }
+  
+
+  
+  .embed__player-button {
+	background: url(images/embed/icon/play.svg) center no-repeat ;
+	cursor: pointer;
+	width: 12%;
+	height: 12%;
+	position: absolute;
+	z-index: 10;
+  }
+  .embed__player-thumbnail {
+	background: url(images/embed/thumbnail/thumbnail.jpg) center no-repeat;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	min-width: 120px;
+	min-height: 80px;
+	z-index: 9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	padding-top: 56.25%;
+	cursor: pointer;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.3); /* Adjust the opacity here (0.5 = 50%) */
+		border-radius: 4px;
+		z-index: 10;
+	  }
+  }
+
+  .embed__player-video-wrapper {
+	position: relative;
+	height: 400px;
+	padding-top: 56.25%;
+  }
+  
+  .embed__player-video-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+  }
+  
+
+  
+  .embed__player-video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  }
+  
+  .embed__description {
+	display: flex;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	color: var(--#{$txt_prefix}-dark-tertiary);
+	font-size: var(--#{$txt_prefix}-font-size-sm);
+	font-weight: var(--#{$txt_prefix}-medium);
+	line-height: 18px;
+	margin:8px;
+  }
+  
+  .embed__credits {
+	display: flex;
+	justify-content: flex-end;
+	color: var(--#{$txt_prefix}-dark-tertiary);
+	font-size: var(--#{$txt_prefix}-font-size-xs);
+	line-height: 16px;
+	margin-right: 8px;
+	margin-bottom: 16px;
+  }
+  
+  .check__event:checked {
+	~ .embed__player {
+	  &-button {
+		display: none;
+	  }
+	  &-thumbnail {
+		display: none;
+	  }
+	  &-video-wrapper {
+		width: 100%;
+	  }
+	  &-video-wrapper iframe {
+		display: block;
+	  }
+	}
+  }
+  

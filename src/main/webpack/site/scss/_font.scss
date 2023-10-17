@@ -1,0 +1,32 @@
+/* Font Weight */
+:root {
+  @each $type, $weight in $font-type {
+    @include font-weight($type, $weight);
+  }
+
+  @each $font, $font-size in $font-family {
+    $font-name: to-lower-case($font);
+    --#{$txt_prefix}-font-#{$font-name}: #{$font-name};
+  }
+}
+
+/* Font family */
+@each $font, $font-size in $font-family {
+  $font-name: to-lower-case($font);
+  $uri: "fonts/" + $font + "/static/";
+
+  @each $name, $weight in $font-type {
+    @include font-face($font, $font + "-" + $name, $uri, $weight);
+  }
+
+  [class*=#{$font-name}] {
+    @each $type, $size in $font-size {
+      @include font-size("font-size-" + $type, $size)
+    }
+  }
+
+  .font-#{$font-name} {
+    font-family: $font;
+    font-style: normal;
+  }
+}

@@ -1,0 +1,110 @@
+
+$carousel-gap-mobile: 24px;
+$carousel-padding-mobile: 16px;
+
+$space-carousel-item: calc(
+  ($padding * 2) * (var(--#{$txt_prefix}-columns-carousel) - 1)
+);
+$carousel-item-width: calc(
+  ($max-width - $space-carousel-item) / var(--#{$txt_prefix}-columns-carousel)
+);
+
+$carousel-item-width-mobile: carousel-width-item-mobile(
+  var(--#{$txt_prefix}-columns-carousel-mobile),
+  $carousel-padding-mobile,
+  $carousel-gap-mobile,
+  var(--#{$txt_prefix}-carousel-visible),
+);
+
+.carousel__container {
+  max-width: 1384px;
+  width: 100%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.carousel__slider {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.carousel__wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.carousel__list {
+  display: flex;
+  gap: calc($padding * 2);
+  position: absolute;
+  min-height: 50px;
+  column-count: var(--#{$txt_prefix}-columns-carousel-mobile);
+
+  .carousel__list--item {
+    overflow: hidden;
+    min-width: $carousel-item-width;
+    max-width: $carousel-item-width;
+  }
+}
+
+.carousel__arrow {
+  background-color: var(--#{$txt_prefix}-light-secondary);
+  cursor: pointer;
+  font-size: 0;
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  min-height: 36px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.4;
+  }
+
+  &::before {
+    content: "";
+    background-color: var(--#{$txt_prefix}-dark-tertiary);
+    mask-image: url(images/icons/icon-arrow.svg);
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    display: flex;
+    width: 20px;
+    height: 20px;
+  }
+
+  &--prev {
+    &::before {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.carousel__bullets {
+  background-color: var(--#{$txt_prefix}-light-secondary);
+  display: flex;
+  border-radius: 12px;
+  margin-top: 32px;
+
+  &--navigate {
+    background-color: var(--#{$txt_prefix}-light-primary);
+    margin: 8px;
+    font-size: 0;
+    border-radius: 100%;
+    width: 8px;
+    height: 8px;
+
+    &.current {
+      background-color: var(--#{$txt_prefix}-dark-tertiary);
+    }
+  }
+}

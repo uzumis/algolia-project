@@ -1,0 +1,127 @@
+.cookies__container {
+  color: var(--#{$txt_prefix}-dark-tertiary);
+  font-weight: var(--#{$txt_prefix}-bold);
+  border: 1px solid var(--#{$txt_prefix}-natural-primary);
+  background-color: var(--#{$txt_prefix}-light-tertiary);
+  border-radius: 8px;
+  max-width: $max-width;
+  display: none;
+  margin: 15px auto;
+  position: relative;
+  z-index: 2000;
+}
+
+.cookies__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-height: calc(100vh - 100px);
+  overflow: auto;
+  margin: 16px;
+}
+
+.cookies__description {
+  font-size: var(--#{$txt_prefix}-font-size-md);;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.cookies__foot {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  justify-content: flex-end;
+  font-size: 14px;
+}
+
+.cookies__title {
+  color: var(--#{$txt_prefix}-natural-primary);
+  font-size: var(--#{$txt_prefix}-font-size-xs);
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.cookies__head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cookies__definition {
+  background-color: var(--#{$txt_prefix}-base-secondary);
+  border: 1px solid var(--#{$txt_prefix}-light-primary);
+  border-radius: 8px;
+  padding: 24px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+
+  .cookies__definition--item {
+    display: flex;
+  }
+}
+
+.cookies__definition--list {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+
+  &:last-child {
+    .cookies__definition--info {
+      border: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+.cookies__definition--checkbox {
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.cookies__definition--info {
+  border-right: 1px solid var(--#{$txt_prefix}-light-secondary);
+  padding-right: 20px;
+  margin-right: 20px;
+}
+
+.cookies__definition--title {
+  color: var(--#{$txt_prefix}-natural-primary);
+  font-size: var(--#{$txt_prefix}-font-size-xl);
+  margin-bottom: 16px;
+}
+
+.cookies__definition--field {
+  position: relative;
+}
+
+.cookies__definition--label {
+  color: var(--#{$txt_prefix}-natural-primary);
+  font-size: var(--#{$txt_prefix}-font-size-lg);
+  line-height: 24px;
+}
+
+.cookies__definition--clear {
+  display: none;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+@include check-event(cookies__definition--description);
+.cookies__definition--description {
+  font-size: var(--#{$txt_prefix}-font-size-sm);
+  line-height: 18px;
+  margin-top: 8px;
+}
+
+.button__cookie--settings {
+  color: var(--#{$txt_prefix}-natural-primary);
+  border-color: var(--#{$txt_prefix}-natural-primary);
+}

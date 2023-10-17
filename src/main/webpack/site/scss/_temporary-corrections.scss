@@ -1,0 +1,45 @@
+.correct-margin {
+  .hardnews01 {
+    margin: 0 calc($margin * -1) 0 calc($margin * -1);
+  }
+}
+
+@media (max-width: 768px) {
+  .correct-margin {
+    .hardnews01 {
+      margin: unset;
+    }
+  }
+}
+
+.main-content__left {
+  padding-right: 20px;
+
+  .list__container {
+    margin-right: 0;
+    padding-right: 0;
+  }
+}
+
+.sidebar__right {
+  padding-left: 20px;
+
+  .articles__head,
+  .previsao__container,
+  .articles__container,
+  .list__container,
+  .articles__foot {
+    margin-left: 0;
+    margin-right: 0;
+    left: 0;
+  }
+
+  .list__container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .articles__head {
+    margin-top: 8px;
+  }
+}

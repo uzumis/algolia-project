@@ -1,0 +1,122 @@
+@use "sass:string";
+
+$txt_prefix: ot !default;
+$body-bg: #FAFAFA !default;
+$max-width: 1280px;
+$padding: 20px;
+$margin: 20px;
+
+/* Font type */
+$font-type: (
+  "Regular": 400,
+  "Medium": 500,
+  "SemiBold": 600,
+  "Bold": 700,
+);
+
+/* Font size */
+$font-size-inter: ( // Font Inter
+  "xl2": 72px,
+  "xl": 60px,
+  "lg": 48px,
+  "md": 36px,
+  "sm": 30px,
+  "xs": 24px,
+);
+
+$font-size-lato: ( // Font Lato
+  "xl": 20px,
+  "lg": 18px,
+  "md": 16px,
+  "sm": 14px,
+  "xs": 12px,
+);
+
+/* Font family */
+$font-family: (
+  'Inter': $font-size-inter,
+  'Lato': $font-size-lato,
+);
+
+@mixin font-face($family, $file, $path, $weight: normal, $style: normal) {
+  @font-face{
+    font-family: $family;
+    src: url($path + $file + '.eot');
+    src:
+      url($path + $file + '.eot?#iefix') format('embedded-opentype'),
+      url($path + $file + '.woff') format('woff'),
+      url($path + $file + '.ttf') format('truetype');
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+@mixin font-size($class, $size) {
+  --#{$txt_prefix}-#{$class}: #{$size};
+}
+
+@mixin font-weight($type, $weight) {
+  --#{$txt_prefix}-#{to-lower-case($type)}: #{$weight};
+}
+
+@mixin check-event($class, $type: block) {
+  .check__event {
+    &:checked {
+      ~ .#{$class} {
+        display: $type;
+      }
+    }
+  }
+}
+
+/*
+  $position-table: elements to paint position of table
+  $position-label: elements to paint label referent the table
+  $color: color the referent to table and label
+*/
+@mixin table-sport-position($position-table, $position-label, $color) {
+  .sports__wrapper {
+    &--table {
+      .sports__list {
+        &:nth-child(n+#{$position-table}) {
+          .sports__position {
+            color: $color;
+          }
+        }
+      }
+    }
+  }
+
+  .sports__status {
+    &--placing {
+      .icons__bullet {
+        &:nth-child(#{$position-label}) {
+          &::before {
+            background-color: $color;
+          }
+        }
+      }
+    }
+  }
+}
+
+@function carousel-width-item-mobile(
+  $column: 1,
+  $padding: 0,
+  $gap: 0,
+  $visible: 0
+) {
+  $width-mobile: calc(100vw / $column);
+
+  @if $padding > 0 {
+    $width-mobile: calc($width-mobile - $padding - $visible);
+  }
+
+  @if $gap > 0 {
+    $width-mobile: calc($width-mobile - $gap);
+  }
+
+  @warn 'carousel-width-item-mobile' $width-mobile;
+
+  @return $width-mobile;
+}

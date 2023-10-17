@@ -1,0 +1,203 @@
+:root {
+
+  /* Base */
+  --#{$txt_prefix}-base-primary: #FFFFFF;
+  --#{$txt_prefix}-base-secondary: #FAFAFA;
+  --#{$txt_prefix}-base-tertiary: #000000;
+
+  /* Dark */
+  --#{$txt_prefix}-dark-primary: #212121;
+  --#{$txt_prefix}-dark-secondary: #353434;
+  --#{$txt_prefix}-dark-tertiary: #555555;
+
+  /* cold */
+  --#{$txt_prefix}-cold-primary: #111111;
+  --#{$txt_prefix}-cold-secondary: #282828;
+  --#{$txt_prefix}-cold-tertiary: #454545;
+
+  /* Light */
+  --#{$txt_prefix}-light-primary: #C4C4C4;
+  --#{$txt_prefix}-light-secondary: #DEDEDE;
+  --#{$txt_prefix}-light-tertiary: #F5F5F5;
+
+  /* wiped */
+  --#{$txt_prefix}-wiped-primary: #4A5578;
+  --#{$txt_prefix}-wiped-secondary: #7D89AF;
+  --#{$txt_prefix}-wiped-tertiary: #EFF1F5;
+
+  /* clean */
+  --#{$txt_prefix}-clean-primary: #4B5565;
+  --#{$txt_prefix}-clean-secondary: #9AA3B2;
+  --#{$txt_prefix}-clean-tertiary: #EEF2F6;
+
+  /* blurry */
+  --#{$txt_prefix}-blurry-primary: #525252;
+  --#{$txt_prefix}-blurry-secondary: #A3A3A3;
+  --#{$txt_prefix}-blurry-tertiary: #F5F5F5;
+
+  /* overshadowed */
+  --#{$txt_prefix}-overshadowed-primary: #626371;
+  --#{$txt_prefix}-overshadowed-secondary: #A9A9A9;
+  --#{$txt_prefix}-overshadowed-tertiary: #F4F4F5;
+
+  /* polluted */
+  --#{$txt_prefix}-polluted-primary: #4D5761;
+  --#{$txt_prefix}-polluted-secondary: #9DA4AE;
+  --#{$txt_prefix}-polluted-tertiary: #F3F4F6;
+
+  /* world */
+  --#{$txt_prefix}-world-primary: #57534E;
+  --#{$txt_prefix}-world-secondary: #A9A29D;
+  --#{$txt_prefix}-world-tertiary: #F5F5F4;
+
+  /* Natural */
+  --#{$txt_prefix}-natural-primary: #005327;
+  --#{$txt_prefix}-natural-secondary: #698F6D;
+  --#{$txt_prefix}-natural-tertiary: #AFBAB1;
+
+  /* Successful */
+  --#{$txt_prefix}-successful-primary: #12B76A;
+  --#{$txt_prefix}-successful-secondary: #6CE9A6;
+  --#{$txt_prefix}-successful-tertiary: #ECFDF3;
+
+  /* Latter */
+  --#{$txt_prefix}-latter-primary: #3D854E;
+  --#{$txt_prefix}-latter-secondary: #78BF42;
+  --#{$txt_prefix}-latter-tertiary: #EEF7E4;
+
+  /* Native */
+  --#{$txt_prefix}-native-primary: #00532B;
+
+  /* Communal */
+  --#{$txt_prefix}-communal-primary: #00361C;
+  --#{$txt_prefix}-communal-secondary: #007242;
+  --#{$txt_prefix}-communal-tertiary: #00A551;
+
+  /* Lifelike */
+  --#{$txt_prefix}-lifelike-primary: #669F2A;
+  --#{$txt_prefix}-lifelike-secondary: #ACDB79;
+  --#{$txt_prefix}-lifelike-tertiary: #E6F4D7;
+
+  /* Simple */
+  --#{$txt_prefix}-simple-primary: #087443;
+  --#{$txt_prefix}-simple-secondary: #16B364;
+  --#{$txt_prefix}-simple-tertiary: #EDFCF2;
+
+  /* Channel */
+  --#{$txt_prefix}-channel-primary: #005328;
+  --#{$txt_prefix}-channel-secondary: #12C064;
+  --#{$txt_prefix}-channel-tertiary: #AADCC1;
+
+  /* Facile */
+  --#{$txt_prefix}-facile-primary: #107569;
+  --#{$txt_prefix}-facile-secondary: #15B79E;
+  --#{$txt_prefix}-facile-tertiary: #F0FDF9;
+
+  /* Pragmatic */
+  --#{$txt_prefix}-pragmatic-primary: #362251;
+  --#{$txt_prefix}-pragmatic-secondary: #6E329F;
+  --#{$txt_prefix}-pragmatic-tertiary: #EBE6F2;
+
+  /* Entertainment */
+  --#{$txt_prefix}-entertainment-primary: #9F1AB1;
+  --#{$txt_prefix}-entertainment-secondary: #D444F1;
+  --#{$txt_prefix}-entertainment-tertiary: #FDF4FF;
+
+  /* Luck */
+  --#{$txt_prefix}-luck-primary: #C11574;
+  --#{$txt_prefix}-luck-secondary: #EE46BC;
+  --#{$txt_prefix}-luck-tertiary: #FDF2FA;
+
+  /* Plus */
+  --#{$txt_prefix}-plus-primary: #C01048;
+  --#{$txt_prefix}-plus-secondary: #F63D68;
+  --#{$txt_prefix}-plus-tertiary: #FFF1F3;
+
+  /* Alive */
+  --#{$txt_prefix}-alive-primary: #97180C;
+  --#{$txt_prefix}-alive-secondary: #E62E05;
+  --#{$txt_prefix}-alive-tertiary: #FFF4ED;
+
+  /* Mild */
+  --#{$txt_prefix}-mild-primary: #A15C07;
+  --#{$txt_prefix}-mild-secondary: #EAAA08;
+  --#{$txt_prefix}-mild-tertiary: #FEFBE8;
+
+  /* Moderate */
+  --#{$txt_prefix}-moderate-primary: #B93815;
+  --#{$txt_prefix}-moderate-secondary: #EF6820;
+  --#{$txt_prefix}-moderate-tertiary: #FEF6EE;
+
+  /* Warning */
+  --#{$txt_prefix}-warning-primary: #F79009;
+  --#{$txt_prefix}-warning-secondary: #FEC84B;
+  --#{$txt_prefix}-warning-tertiary: #FFFAEB;
+
+  /* Error */
+  --#{$txt_prefix}-error-primary: #F04438;
+  --#{$txt_prefix}-error-secondary: #FDA29B;
+  --#{$txt_prefix}-error-tertiary: #FEF3F2;
+
+  /* Warn */
+  --#{$txt_prefix}-warn-primary: #F5BF60;
+
+  /* contrast */
+  --#{$txt_prefix}-contrast-primary: #B11116;
+
+  /* distinct */
+  --#{$txt_prefix}-distinct-primary: #E20119;
+  --#{$txt_prefix}-distinct-secondary: #16100D;
+
+  /* Soft */
+  --#{$txt_prefix}-soft-primary: #022760;
+  --#{$txt_prefix}-soft-secondary: #1D3D90;
+  --#{$txt_prefix}-soft-tertiary: #005BA2;
+
+  /* meek */
+  --#{$txt_prefix}-meek-primary: #0E7090;
+  --#{$txt_prefix}-meek-secondary: #06AED4;
+  --#{$txt_prefix}-meek-tertiary: #ECFDFF;
+
+  /* city */
+  --#{$txt_prefix}-city-primary: #3E4784;
+  --#{$txt_prefix}-city-secondary: #B3B8DB;
+  --#{$txt_prefix}-city-tertiary: #EAECF5;
+
+  /* delicate */
+  --#{$txt_prefix}-delicate-primary: #02609D;
+  --#{$txt_prefix}-delicate-secondary: #78B3DA;
+
+  /* sensible */
+  --#{$txt_prefix}-sensible-primary: #065986;
+  --#{$txt_prefix}-sensible-secondary: #0086C9;
+  --#{$txt_prefix}-sensible-tertiary: #F0F9FF;
+
+  /* gentle */
+  --#{$txt_prefix}-gentle-primary: #3538CD;
+  --#{$txt_prefix}-gentle-secondary: #6172F3;
+  --#{$txt_prefix}-gentle-tertiary: #EEF4FF;
+
+  /* smooth */
+  --#{$txt_prefix}-smooth-primary: #1849A9;
+  --#{$txt_prefix}-smooth-secondary: #1570EF;
+  --#{$txt_prefix}-smooth-tertiary: #EFF8FF;
+
+  /* story */
+  --#{$txt_prefix}-story-primary: #6927DA;
+  --#{$txt_prefix}-story-secondary: #875BF7;
+  --#{$txt_prefix}-story-tertiary: #F5F3FF;
+
+  /* survey */
+  --#{$txt_prefix}-survey-primary: #004EEB;
+  --#{$txt_prefix}-survey-secondary: #2970FF;
+  --#{$txt_prefix}-survey-tertiary: #EFF4FF;
+
+  /* rickety */
+  --#{$txt_prefix}-rickety-primary: #5925DC;
+  --#{$txt_prefix}-rickety-secondary: #7A5AF8;
+  --#{$txt_prefix}-rickety-tertiary: #F4F3FF;
+
+  /* payper */
+  --#{$txt_prefix}-payper-primary: #004A8F;
+  --#{$txt_prefix}-payper-secondary: #183F7B;
+}

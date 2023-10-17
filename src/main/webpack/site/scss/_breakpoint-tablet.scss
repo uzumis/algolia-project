@@ -1,0 +1,35 @@
+@media (min-width: 769px) and (max-width: 1200px) {
+  .header__submenu__content {
+    max-width: 900px;
+    font-size: 9px;
+    gap: 9px;
+  }
+
+  /* Tablet */
+  .articles__container {
+    &.aem-Grid,
+    .aem-Grid {
+      display: inline-block;
+      height: 100%;
+    }
+  }
+
+  .articles__wrapper {
+    &:last-child {
+      .list__container {
+        border-right-width: 0;
+      }
+
+      .articles__content {
+        &:last-child {
+          .list__container {
+            border-right-width: 0;
+          }
+        }
+        .list__container {
+          border-right-width: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+# Netbiis Deployment to frontend adobe cloud manager
+# This pipeline start every time some commit is pushed into develop
+# -----
+
+image: atlassian/default-image:3
+  
+pipelines:
+  branches:
+    develop:
+        - step:
+            name: Deploy Cloud Manager Development Environment
+            script:
+              - git config --system core.longpaths true
+              - git remote add adobe https://$ADOBE_USER:$ADOBE_PASS@$ADOBE_REPO
+              - git push adobe $BITBUCKET_BRANCH:develop --force
+
+    master:
+        - step:
+            name: Deploy Cloud Manager Development Environment
+            script:
+              - git config --system core.longpaths true
+              - git remote add adobe https://$ADOBE_USER:$ADOBE_PASS@$ADOBE_REPO
+              - git push adobe $BITBUCKET_BRANCH:master --force
+    

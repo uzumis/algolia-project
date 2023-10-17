@@ -1,0 +1,522 @@
+.previsao__container {
+  background-color: var(--#{$txt_prefix}-base-secondary);
+  border: 1px solid var(--#{$txt_prefix}-light-secondary);
+  border-radius: 8px;
+  width: 100%;
+  height: 130px;
+  padding: 16px;
+  gap: 16px;
+  margin: 15px;
+}
+
+.forecast__head-margin {
+  margin-left: 15px;
+}
+
+.previsao__container__item-search {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.previsao__search input {
+  background-color: var(--#{$txt_prefix}-base-secondary);
+  font-weight: var(--#{$txt_prefix}-bold);
+  border: none;
+  width: 222px;
+  height: 42px;
+  font-size: 13px;
+}
+
+.previsao__search {
+  display: flex;
+}
+
+.previsao__head {
+  color: var(--#{$txt_prefix}-natural-primary);
+  font-size: var(--#{$txt_prefix}-font-size-sm);
+  border-bottom: 1px solid var(--#{$txt_prefix}-light-secondary);
+  margin-top: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.previsao__head--title {
+  border-bottom: 1px solid var(--#{$txt_prefix}-natural-primary);
+  font-size: var(--#{$txt_prefix}-font-size-xs);
+  font-weight: 900;
+}
+
+.previsao__head--link {
+  color: var(--#{$txt_prefix}-natural-primary);
+  margin-right: 8px;
+  font-weight: var(--#{$txt_prefix}-bold);
+}
+
+.previsao__container__item-temperatura {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.previsao__temp--item-principal {
+  color: var(--#{$txt_prefix}-base-tertiary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.previsao__temp--text {
+  display: flex;
+  flex-direction: column;
+  float: right;
+  align-items: flex-start;
+}
+
+.previsao__temp--item {
+  color: var(--#{$txt_prefix}-base-tertiary);
+  width: 60px;
+  display: flex;
+  height: 44px;
+  gap: 8px;
+  align-items: center;
+}
+
+.previsao__temp--day-principal {
+  color: var(--#{$txt_prefix}-dark-tertiary);
+  font-size: var(--#{$txt_prefix}-font-size-sm);
+  margin-bottom: 0px;
+}
+
+.previsao__temp--day-sub {
+  color: var(--#{$txt_prefix}-dark-tertiary);
+  font-size: var(--#{$txt_prefix}-font-size-xs);
+  margin-bottom: 0px;
+}
+
+.previsao__temp--celsius-principal {
+  font-size: var(--#{$txt_prefix}-font-size-xl);
+  font-weight: var(--#{$txt_prefix}-bold);
+  margin-bottom: 0px;
+}
+
+.previsao__temp--celsius-sub {
+  font-size: var(--#{$txt_prefix}-font-size-md);
+  font-weight: var(--#{$txt_prefix}-bold);
+  margin-bottom: 0px;
+}
+
+.previsao__temp--item-principal-mobile {
+  display: none;
+}
+
+.previsao__temp--icon {
+  height: 24px;
+  width: 24px;
+  margin-left: -8px;
+}
+
+
+
+
+
+/////PAGINA PREVISÃO DO TEMPO//////////
+.previsao__tempo {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  max-width: 840px;
+
+}
+
+.margin-top-16 {
+  margin-top: 16px;
+}
+
+.previsao__tempo-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 32px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 8px;
+  border: 1px solid var(--#{$txt_prefix}-light-secondary);
+  background: var(--#{$txt_prefix}-base-secondary);
+}
+
+.previsao__header-col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.previsao__header-temperature {
+  color: var(--#{$txt_prefix}-dark-primary);
+  font-size: var(--#{$txt_prefix}-font-size-md);
+  font-style: normal;
+  font-weight: var(--#{$txt_prefix}-semibold);
+  line-height: 44px;
+  letter-spacing: -0.72px;
+}
+
+.previsao__header-wrapper {
+  width: 100%;
+}
+
+.previsao__tempo-status {
+  display: flex;
+  flex-direction: row;
+}
+
+.previsao__tempo-status-days {
+  display: flex;
+  flex-direction: row;
+}
+
+.previsao__tempo-status-item {
+  width: 199px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.previsao__tempo-status-item-temperature {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  // margin-left: -8px;
+}
+
+
+.previsao__loc-container {
+  margin-top: -16px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+
+
+.temperature-min,
+.temperature-max {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.temperature-min-text,
+.temperature-max-text {
+  color: var(--#{$txt_prefix}-dark-tertiary);
+  text-align: right;
+  font-family: Lato;
+  font-size: var(--#{$txt_prefix}-font-size-md);
+  font-style: normal;
+  font-weight: var(--#{$txt_prefix}-semibold);
+  line-height: 22px;
+}
+
+.temperature-font {
+  text-align: right;
+  font-size: var(--#{$txt_prefix}-font-size-xs);
+  font-style: normal;
+  font-weight: var(--#{$txt_prefix}-bold);
+  line-height: 32px;
+}
+
+.font-min {
+  color: var(--#{$txt_prefix}-dark-tertiary);
+}
+
+.font-max {
+  color: var(--#{$txt_prefix}-dark-primary);
+}
+
+.previsao__tempo-aux-stats {
+  display: flex;
+  column-gap: 42px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.previsao__header-index-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: var(--#{$txt_prefix}-dark-tertiary);
+  font-family: Lato;
+  font-size: var(--#{$txt_prefix}-font-size-lg);
+  font-style: normal;
+  font-weight: var(--#{$txt_prefix}-semibold);
+  line-height: 24px;
+}
+
+.previsao__loc-name {
+  color: var(--#{$txt_prefix}-dark-primary);
+  font-family: Inter;
+  font-size: var(--#{$txt_prefix}-font-size-xl);
+  font-style: normal;
+  font-weight: var(--#{$txt_prefix}-bold);
+  line-height: 28px;
+}
+
+.previsao__tempo-fases-dia {
+  color: var(--#{$txt_prefix}-dark-tertiary);
+  font-family: Lato;
+  font-size: var(--#{$txt_prefix}-font-size-lg);
+  font-style: normal;
+  font-weight: var(--#{$txt_prefix}-semibold);
+  line-height: 24px;
+}
+
+.icon-big {
+  display: block;
+  width: 52px;
+  height: 52px;
+}
+
+.icon-mid {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+.icon-small {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.aux-stats-item-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.aux-stats--col {
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  align-self: stretch;
+}
+
+.stats-col2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.stats-dia {
+  font-size: var(--#{$txt_prefix}-font-size-xs);
+  font-weight: var(--#{$txt_prefix}-semibold);
+}
+
+.stats-info {
+  color: var(--#{$txt_prefix}-dark-primary);
+  font-family: Lato;
+  font-size: var(--#{$txt_prefix}-font-size-md);
+  font-style: normal;
+  font-weight: var(--#{$txt_prefix}-bold);
+  line-height: 22px;
+}
+
+.previsao__prox--dias-item {
+  padding-left: 24px;
+  padding-right: 15px;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  border-bottom: 1px solid var(--#{$txt_prefix}-light-secondary);
+}
+
+.previsao__prox--dias-item:first-child {
+  color: var(--#{$txt_prefix}-dark-tertiary);
+  font-family: Lato;
+  font-size: var(--#{$txt_prefix}-font-size-lg);
+  font-style: normal;
+  font-weight: var(--#{$txt_prefix}-bold);
+  line-height: 24px;
+}
+
+.previsao__prox--dias-item:last-child {
+  border-bottom: 0px;
+}
+
+.previsao__prox-dias-diasemana {
+  width: 175px;
+  padding-right: 24px;
+  color: var(--#{$txt_prefix}-dark-tertiary);
+  font-family: Lato;
+  font-size: var(--#{$txt_prefix}-font-size-md);
+  font-style: normal;
+  font-weight: var(--#{$txt_prefix}-semibold);
+  line-height: 22px;
+}
+
+.previsao__tempo--searchbox {
+  display: flex;
+  width: 100%;
+  margin-bottom: -24px;
+  margin-top: 16px;
+  gap: 8px;
+}
+
+.previsao__tempo--city-search {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.previsao__tempo-inputwrapper {
+  width: 100%;
+  padding: 10px 14px;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid var(--cinza-secundrio, #DEDEDE);
+  background: var(--base-branco, #FAFAFA);
+}
+
+//COMPLEMENTOS
+
+.font-16 {
+  font-size: var(--#{$txt_prefix}-font-size-md);
+}
+
+.font-12 {
+  font-size: var(--#{$txt_prefix}-font-size-xs);
+}
+.lineheight-22{
+  line-height: 22px;
+}
+.lineheight-16{
+  line-height: 16px;
+}
+.width-100 {
+  width: 100%;
+}
+
+.item-gap {
+  gap: 24px
+}
+
+.item-gap-8 {
+  gap: 8px;
+}
+
+.nopadding {
+  padding: 0px;
+}
+.nomargin{
+  margin: 0px
+}
+
+
+//CARROSSEL
+.previsao__carousel--container.carousel__container{
+  width: 1384px;
+  margin: 20px -50px -20px;
+  gap:8px;
+  padding-top: 16px;
+}
+
+.previsao__carousel {
+  display: flex;
+  width: 100%;
+  max-width: 290px;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  border-radius: 8px;
+  border: 1px solid var(--cinza-secundrio, #DEDEDE);
+  background: var(--base-branco, #FAFAFA);
+}
+
+.previsao__carousel--wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.previsao__carousel-city {
+  color: var(--#{$txt_prefix}-dark-tertiary);
+  font-style: normal;
+  font-weight: var(--#{$txt_prefix}-bold);
+  line-height: 18px;
+}
+
+.previsao__carousel--now-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+
+.previsao__carousel--now-subcontainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.previsao__carousel--now-text {
+  color: var(--#{$txt_prefix}-dark-tertiary);
+
+
+  font-family: Lato;
+  font-size: var(--#{$txt_prefix}-font-size-sm);
+  font-style: normal;
+  font-weight: var(--#{$txt_prefix}-semibold);
+  line-height: 18px;
+}
+
+.previsao__carousel--now-temperature {
+
+  color: var(--#{$txt_prefix}-dark-primary);
+  font-family: Lato;
+  font-size: var(--#{$txt_prefix}-font-size-xl);
+  font-style: normal;
+  font-weight: var(--#{$txt_prefix}-bold);
+  line-height: 26px;
+}
+
+.previsao__carousel--now-subcontainer2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.font-14 {
+  font-size: var(--#{$txt_prefix}-font-size-sm);
+}
+
+.font-20 {
+  font-size: var(--#{$txt_prefix}-font-size-xl);
+}
+
+.gap-8 {
+  gap: 8px;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}

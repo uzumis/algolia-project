@@ -1,0 +1,186 @@
+.sitemap__menu {
+  font-weight: var(--#{$txt_prefix}-bold);
+  font-size: var(--#{$txt_prefix}-font-size-sm);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  column-gap: 45px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.sitemap__menu-list {
+  padding: 2px 8px;
+}
+
+.sitemap__menu-title {
+  color: var(--#{$txt_prefix}-dark-primary);
+  position: relative;
+  display: flex;
+  z-index: 10;
+  justify-content: space-between;
+}
+
+.sitemap__menu-link {
+  color: var(--#{$txt_prefix}-dark-tertiary);
+}
+
+.sitemap__menu-lateral {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+  width: 300px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.sitemap__menu-lateral-item {
+  font-weight: var(--#{$txt_prefix}-bold);
+  font-size: var(--#{$txt_prefix}-font-size-md);
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+
+  &.lastnews {
+    color: var(--#{$txt_prefix}-latter-primary);
+  }
+
+  &.sports {
+    color: var(--#{$txt_prefix}-pragmatic-secondary);
+  }
+
+  &.betim {
+    color: var(--#{$txt_prefix}-delicate-primary);
+  }
+
+  &.canal {
+    color: var(--#{$txt_prefix}-channel-primary);
+  }
+
+  &.otplus {
+    color: var(--#{$txt_prefix}-plus-primary);
+  }
+
+  &.ot360 {
+    color: var(--#{$txt_prefix}-overshadowed-primary);
+  }
+
+  &.supernews {
+    color: var(--#{$txt_prefix}-distinct-primary);
+  }
+
+  &.bancadigital {
+    color: var(--#{$txt_prefix}-natural-primary);
+  }
+}
+
+.sitemap__menu-lateral-icone {
+  padding-right: 8px;
+}
+
+.sitemap__menu-categorias {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+  width: 200px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  line-height: 18px;
+}
+
+.sitemap__menu-categorias-colunas {
+  &.politics{
+    color: var(--#{$txt_prefix}-clean-primary);
+  }
+  &.sports{
+    color: var(--#{$txt_prefix}-pragmatic-secondary);
+  }
+  &.cities{
+    color: var(--#{$txt_prefix}-city-primary);
+  }
+  &.economy{
+    color: var(--#{$txt_prefix}-meek-primary);
+  }
+  &.brazil{
+    color: var(--#{$txt_prefix}-simple-primary);
+  }
+  &.world{
+    color: var(--#{$txt_prefix}-world-primary);
+  }
+  &.co{
+    color: var(--#{$txt_prefix}-sensible-primary);
+  }
+  &.datatempo{
+    color: var(--#{$txt_prefix}-blurry-primary);
+  }
+  &.channels{
+    color: var(--#{$txt_prefix}-channel-primary);
+  }
+  &.forecast{
+    color: var(--#{$txt_prefix}-gentle-primary);
+  }
+  &.entretainment{
+    color: var(--#{$txt_prefix}-entertainment-primary);
+  }
+  &.tourism{
+    color: var(--#{$txt_prefix}-moderate-primary);
+  }
+  &.autotempo{
+    color: var(--#{$txt_prefix}-smooth-primary);
+  }
+  &.loteries{
+   color: var(--#{$txt_prefix}-luck-primary);
+  }
+}
+
+.sitemap__menu-inferior-item {
+  padding-right: 32px;
+}
+
+.sitemap-banner-title {
+  font-size: var(--#{$txt_prefix}-font-size-xl);
+}
+
+.newsletter {
+  color: var(--#{$txt_prefix}-dark-tertiary);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 160px;
+  padding: 16px;
+}
+
+.newsletter__container {
+  width: 252px;
+}
+
+.newsletter__title {
+  font-size: var(--#{$txt_prefix}-font-size-xs);
+}
+
+.newsletter__sub {
+  font-size: var(--#{$txt_prefix}-font-size-lg);
+}
+
+.newsletter__button {
+  background-color: var(--#{$txt_prefix}-warn-primary);
+  color: var(--#{$txt_prefix}-base-tertiary);
+  font-size: var(--#{$txt_prefix}-font-size-xs);
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+.display-none{
+  display: none;
+}

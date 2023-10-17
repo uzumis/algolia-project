@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Header</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-theme-classic" />
+<script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.10.5/dist/algoliasearch-lite.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.53.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-plugin-recent-searches"></script>
+<script src="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-plugin-query-suggestions"></script>
+</head>
+<style>
+
+</style>
+<body>
+  <header class="header__container font-lato">
+    <section class="header__head">
+      <section class="header large has-desktop-width">
+        <div class="header__content">
+          <div class="header__menu-lateral">
+            <input class="check__event" type="checkbox" id="header__menu" />
+            <label class="header__menu--button" for="header__menu">&nbsp;</label>
+
+            <div class="header__menu-dropdown">
+              <label class="dropdown__bg" for="header__menu">&nbsp;</label>
+              <div class="header__menu--top">
+                <div class="assine__content">
+                  <a href="#assine" class="assine__button">ASSINE</a>
+                </div>
+       
+                  <form class="search" role="search">
+                    <div  class = "algolia__container" id="headersearch"></div>
+                  </form>
+          
+
+
+                <!-- Sitemap -->
+                <div class="sitemap__menu has-desktop-width">
+                  <div class="sitemap__menu-lateral">
+                    <a class="sitemap__menu-lateral-item lastnews" href="#ultimas-noticias" title="ÚLTIMAS NOTÍCIAS">
+                      <img class="sitemap__menu-lateral-icone" src="clientlib-site/images/footer/icon/u-noticias.svg">
+                      ÚLTIMAS NOTÍCIAS
+                    </a>
+                    <a class="sitemap__menu-lateral-item sports" href="#o-tempo-sports" title="O TEMPO SPORTS">
+                      <img class="sitemap__menu-lateral-icone" src="clientlib-site/images/footer/icon/ot-sports.svg">
+                      O TEMPO SPORTS
+                    </a>
+                    <a class="sitemap__menu-lateral-item betim" href="#o-tempo-betim" title="O TEMPO BETIM">
+                      <img class="sitemap__menu-lateral-icone" src="clientlib-site/images/footer/icon/ot-betim.svg">
+                      O TEMPO BETIM
+                    </a>
+                    <a class="sitemap__menu-lateral-item canal" href="#canal-o-tempo" title="CANAL O TEMPO">
+                      <img class="sitemap__menu-lateral-icone" src="clientlib-site/images/footer/icon/ot-canal.svg">
+                      CANAL O TEMPO
+                    </a>
+                    <a class="sitemap__menu-lateral-item canal" href="#fm-o-tempo" title="FM O TEMPO">
+                      <img class="sitemap__menu-lateral-icone" src="clientlib-site/images/footer/icon/ot-fmradio.svg">
+                      FM O TEMPO
+                    </a>
+                    <a class="sitemap__menu-lateral-item otplus" href="#o-tempo-plus" title="O TEMPO PLUS">
+                      <img class="sitemap__menu-lateral-icone" src="clientlib-site/images/footer/icon/ot-plus.svg">
+                      O TEMPO PLUS
+                    </a>
+                    <a class="sitemap__menu-lateral-item ot360" href="#ot-360" title="OT 360">
+                      <img class="sitemap__menu-lateral-icone" src="clientlib-site/images/footer/icon/ot-360.svg">
+                      OT 360
+                    </a>
+                    <a class="sitemap__menu-lateral-item supernews" href="#super-notícia" title="SUPER NOTÍCIA">
+                      <img class="sitemap__menu-lateral-icone" src="clientlib-site/images/footer/icon/ot-super.svg">
+                      SUPER NOTÍCIA
+                    </a>
+                    <a class="sitemap__menu-lateral-item bancadigital" href="#banca-digital" title="BANCA DIGITAL">
+                      <img class="sitemap__menu-lateral-icone"
+                        src="clientlib-site/images/footer/icon/ot-banca-digital.svg">
+                      BANCA DIGITAL
+                    </a>
+                  </div>
+                  <!-- MENU 1 -->
+                  <div class="sitemap__menu-categorias">
+                    <div class="sitemap__menu-categorias-colunas">
+                      <input class="check__event" type="checkbox" id="menu-politica" />
+                      <label class="sitemap__menu-title" for="menu-politica">POLÍTICA</label>
+                      <ul class="header__submenu-category">
+                        <li class="sitemap__menu-list">
+                          <a class="sitemap__menu-link" href="#aparte" title="Aparte">Aparte</a>
+                        </li>
+                        <li class="sitemap__menu-list">
+                          <a class="sitemap__menu-link" href="#colunistas" title="Colunistas">Colunistas</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="sitemap__menu-categorias-colunas">
+                      <input class="check__event" type="checkbox" id="menu-sport" />
+                      <label class="sitemap__menu-title" for="menu-sport">ESPORTES</label>
+                      <ul class="header__submenu-category">
+                        <li class="sitemap__menu-list">
+                          <a class="sitemap__menu-link" href="#atlético" title="Atlético">Atlético</a>
+                        </li>
+                        <li class="sitemap__menu-list">
+                          <a class="sitemap__menu-link" href="#cruzeiro" title="Cruzeiro">Cruzeiro</a>
+                        </li>
+                        <li class="sitemap__menu-list">
+                          <a class="sitemap__menu-link" href="#america" title="America">America</a>
+                        </li>
+                        <li class="sitemap__menu-list">
+                          <a class="sitemap__menu-link" href="#volei" title="Volei">Volei</a>
+                        </li>
+                        <li class="sitemap__menu-list">
+                          <a class="sitemap__menu-link" href="#campeonato-mineiro" title="Campeonato Mineiro">Campeonato
+                            Mineiro</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="sitemap__menu-categorias-colunas">
+                      <input class="check__event" type="checkbox" id="menu-city" />
+                      <label class="sitemap__menu-title" for="menu-city">CIDADES</label>
+                      <ul class="header__submenu-category">
+                        <li class="sitemap__menu-list">
+                          <a class="sitemap__menu-link" href="#brasília" title="Brasília">Brasília</a>
+                        </li>
+                        <li class="sitemap__menu-list">
+                          <a class="sitemap__menu-link" href="#belo-horizonte" title="Belo Horizonte">Belo Horizonte</a>
+                        </li>
+                        <li class="sitemap__menu-list">
+                          <a class="sitemap__menu-link" href="#betim" title="Betim">Betim</a>
+                        </li>
+                        <li class="sitemap__menu-list">
+                          <a class="sitemap__menu-link" href="#contagem" title="Contagem">Contagem</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- MENU 2 -->
+                  <div class="sitemap__menu-categorias">
+                    <div class="sitemap__menu-categorias-colunas">
+                      <a class="sitemap__menu-title" href="#economia" title="ECONOMIA">ECONOMIA</a>
+                    </div>
+                    <div class="sitemap__menu-categorias-colunas">
+                      <a class="sitemap__menu-title" href="#brasil" title="BRASIL">BRASIL</a>
+                    </div>
+                    <div class="sitemap__menu-categorias-colunas">
+                      <a class="sitemap__menu-title" href="#mundo" title="MUNDO">MUNDO</a>
+                    </div>
+                    <div class="sitemap__menu-categorias-colunas">
+
+                      <input class="check__event" type="checkbox" id="menu-opinions" />
+                      <label class="sitemap__menu-title" for="menu-opinions">COLUNISTAS E OPINIÕES</label>
+                      <ul class="header__submenu-category">
+                        <li class="sitemap__menu-list">
+                          <a class="sitemap__menu-link" href="#editorial" title="Editorial">Editorial</a>
+                        </li>
+                        <li class="sitemap__menu-list">
+                          <a class="sitemap__menu-link" href="#colunistas" title="Colunistas">Colunistas</a>
+                        </li>
+                        <li class="sitemap__menu-list">
+                          <a class="sitemap__menu-link" href="#convidados" title="Convidados">Convidados</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="sitemap__menu-categorias-colunas">
+                      <a class="sitemap__menu-title" href="#data-tempo" title="DATA TEMPO">DATA TEMPO</a>
+                    </div>
+                    <div class="sitemap__menu-categorias-colunas">
+
+                      <input class="check__event" type="checkbox" id="menu-channel" />
+                      <label class="sitemap__menu-title" for="menu-channel">CANAL O TEMPO</label>
+                      <ul class="header__submenu-category">
+                        <li class="sitemap__menu-list">
+                          <a class="sitemap__menu-link" href="#vídeos" title="Vídeos">Vídeos</a>
+                        </li>
+                        <li class="sitemap__menu-list">
+                          <a class="sitemap__menu-link" href="#rádio" title="Rádio">Rádio</a>
+                        </li>
+                        <li class="sitemap__menu-list">
+                          <a class="sitemap__menu-link" href="#podcast" title="Podcast">Podcast</a>
+                        </li>
+                        <li class="sitemap__menu-list">
+                          <a class="sitemap__menu-link" href="#programação" title="Programação">Programação</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- MENU 3 -->
+                  <div class="sitemap__menu-categorias">
+                    <div class="sitemap__menu-categorias-colunas">
+                      <a class="sitemap__menu-title" href="#previsão-do-tempo" title="PREVISÃO DO TEMPO">PREVISÃO DO
+                        TEMPO</a>
+                    </div>
+                    <div class="sitemap__menu-categorias-colunas">
+
+                      <input class="check__event" type="checkbox" id="menu-entertainment" />
+                      <label class="sitemap__menu-title" for="menu-entertainment">ENTRETENIMENTO</label>
+                      <ul class="header__submenu-category">
+                        <li class="sitemap__menu-list">
+                          <a class="sitemap__menu-link" href="#bbb" title="BBB">BBB</a>
+                        </li>
+                        <li class="sitemap__menu-list">
+                          <a class="sitemap__menu-link" href="#carnaval" title="Carnaval">Carnaval</a>
+                        </li>
+                        <li class="sitemap__menu-list">
+                          <a class="sitemap__menu-link" href="#horóscopo" title="Horóscopo">Horóscopo</a>
+                        </li>
+                        <li class="sitemap__menu-list">
+                          <a class="sitemap__menu-link" href="#gastronomia" title="Gastronomia">Gastronomia</a>
+                        </li>
+                        <li class="sitemap__menu-list">
+                          <a class="sitemap__menu-link" href="#charge" title="Charge">Charge</a>
+                        </li>
+                        <li class="sitemap__menu-list">
+                          <a class="sitemap__menu-link" href="#enquetes" title="Enquetes">Enquetes</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="sitemap__menu-categorias-colunas">
+                      <a class="sitemap__menu-title" href="#turismo" title="TURISMO">TURISMO</a>
+                    </div>
+                    <div class="sitemap__menu-categorias-colunas">
+                      <a class="sitemap__menu-title" href="#autotempo" title="AUTOTEMPO">AUTOTEMPO</a>
+                    </div>
+                    <div class="sitemap__menu-categorias-colunas">
+                      <a class="sitemap__menu-title" href="#loterias" title="LOTERIAS">LOTERIAS</a>
+                    </div>
+                  </div>
+                  <!-- MENU 4 -->
+                  <div class="sitemap__menu-categorias">
+                    <div class="sitemap__menu-categorias-colunas">
+                      <a class="sitemap__menu-title" href="#infográfico" title="INFOGRÁFICO">INFOGRÁFICO</a>
+                    </div>
+                    <div class="sitemap__menu-categorias-colunas">
+                      <a class="sitemap__menu-title" href="#interessa" title="INTERESSA">INTERESSA</a>
+                    </div>
+                    <div class="sitemap__menu-categorias-colunas">
+
+                      <input class="check__event" type="checkbox" id="menu-more" />
+                      <label class="sitemap__menu-title" for="menu-more">MAIS CONTEÚDO</label>
+                      <ul class="header__submenu-category">
+                        <li class="sitemap__menu-list">
+                          <a class="sitemap__menu-link" href="#cobertura-especiais"
+                            title="Cobertura especiais">Cobertura
+                            especiais</a>
+                        </li>
+                        <li class="sitemap__menu-list">
+                          <a class="sitemap__menu-link" href="#especial-yanomami" title="Especial Yanomami">Especial
+                            Yanomami</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="sitemap__menu-categorias-colunas">
+                      <a class="sitemap__menu-title" href="#newsletter" title="NEWSLETTER">NEWSLETTER</a>
+                    </div>
+                    <div class="sitemap__menu-categorias-colunas">
+                      <a class="sitemap__menu-title" href="#publicidade-legal" title="PUBLICIDADE LEGAL">PUBLICIDADE
+                        LEGAL</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="header__menu--bottom">
+                <div class="newsletter has-desktop-width">
+                  <div class="newsletter__container">
+                    <p class="newsletter__title font-inter">Oferta especial</p>
+                    <p class="newsletter__sub">R$1,90 no primeiro mês</p>
+                    <button class="newsletter__button">ASSINE AGORA</button>
+                  </div>
+                  <div class="newsletter__container">
+                    <p class="newsletter__title font-inter">O TEMPO Newsletter</p>
+                    <p class="newsletter__sub">Inscreva-se agora, é de graça</p>
+                    <button class="newsletter__button">INSCREVA-SE AGORA</button>
+                  </div>
+                </div>
+
+                <div class="redes__sociais has-desktop-width mobile-display-none">
+                  <div class="redes__sociais-box">
+                    <a class="redes__sociais-icon" target="_blank" href="#instagram" title="INSTAGRAM">
+                      <img class="redes__sociais-img" src="clientlib-site/images/footer/icon/icon-insta.svg">
+                    </a>
+                    <a class="redes__sociais-icon" target="_blank" href="#whatsapp" title="WHATSAPP">
+                      <img class="redes__sociais-img" src="clientlib-site/images/footer/icon/icon-what.svg">
+                    </a>
+                    <a class="redes__sociais-icon" target="_blank" href="#facebook" title="FACEBOOK">
+                      <img class="redes__sociais-img" src="clientlib-site/images/footer/icon/icon-face.svg">
+                    </a>
+                    <a class="redes__sociais-icon" target="_blank" href="#twitter" title="TWITTER">
+                      <img class="redes__sociais-img" src="clientlib-site/images/footer/icon/icon-twitter.svg">
+                    </a>
+                    <a class="redes__sociais-icon" target="_blank" href="#linkedin" title="LINKEDIN">
+                      <img class="redes__sociais-img" src="clientlib-site/images/footer/icon/icon-insta.svg">
+                    </a>
+                    <a class="redes__sociais-icon" target="_blank" href="#youtube" title="YOUTUBE">
+                      <img class="redes__sociais-img" src="clientlib-site/images/footer/icon/icon-yt.svg">
+                    </a>
+                    <a class="redes__sociais-icon" target="_blank" href="#tiktok" title="TIKTOK">
+                      <img class="redes__sociais-img" src="clientlib-site/images/footer/icon/icon-tiktok.svg">
+                    </a>
+                    <a class="redes__sociais-icon" target="_blank" href="#kwai" title="KWAI">
+                      <img class="redes__sociais-img" src="clientlib-site/images/footer/icon/icon-kwai.svg">
+                    </a>
+                  </div>
+                </div>
+
+                <div class="footer__menu-inferior has-desktop-width mobile-display-none">
+                  <a class="footer__menu-link" href="#assine" title="ASSINE">ASSINE</a>
+                  <a class="footer__menu-link" href="#expediente" title="EXPEDIENTE">EXPEDIENTE</a>
+                  <a class="footer__menu-link" href="#termos-de-uso" title="TERMOS DE USO">TERMOS DE USO</a>
+                  <a class="footer__menu-link" href="#politica-de-privacidade" title="POLÍTICA DE PRIVACIDADE">POLÍTICA
+                    DE
+                    PRIVACIDADE</a>
+                  <a class="footer__menu-link" href="#politica-de-cookies" title="POLÍTICA DE COOKIES">POLÍTICA DE
+                    COOKIES</a>
+                  <a class="footer__menu-link" href="#protecao-de-dados" title="PROTEÇÃO DE DADOS">PROTEÇÃO DE DADOS</a>
+                  <a class="footer__menu-link" href="#anuncie" title="ANUNCIE">ANUNCIE</a>
+                  <a class="footer__menu-link" href="#trabalhe-conosco" title="TRABALHE CONOSCO">TRABALHE CONOSCO</a>
+                </div>
+
+                <div class="footer__copyright mobile-display-none bgNatural--primary">
+                  <div class="display-none"><img src="clientlib-site/images/footer/icon/ot-title.svg"></div>
+                  <div>© 1996 - 2023 | SEMPRE EDITORA</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RADIO -->
+          <div class="header__menu-categorias1">
+            <div class="sitemap__menu-categorias-colunas channels">
+              <button class="header__radio--tempo">
+                <span class="header__radio--icon">&nbsp;</span>
+                <div class="animation">
+                  <p id="textoRolante">O TEMPO NEWS</p>
+                </div>
+                <audio src="https://9134.brasilstream.com.br/stream" id="playpause"></audio>
+                <input class="check__event" type="checkbox" id="toggleCheckbox">
+                <label class="header__radio--play" for="toggleCheckbox">&nbsp;</label>
+              </button>
+            </div>
+          </div>
+          <!-- LOGO O TEMPO -->
+          <div class="header__menu-categorias2">
+
+            <div class="sitemap__menu-categorias-colunas">
+              <a href="#home" class="header__logo" title="O Tempo Home">&nbsp;</a>
+            </div>
+
+          </div>
+
+          <!-- ASSINE & LOGIN -->
+          <div class="header__menu-categorias3">
+            <div class="header__login">
+              <a href="#assine" class="assine__button">ASSINE</a>
+
+              <div class="header__temp">
+                <span class="header__temp-txt">
+                  <span class="icon-temp">&nbsp;</span>
+                  <span class="header__temp-rate">28°</span>
+                </span>
+              </div>
+
+              <a href="#login" class="header__login--button">
+                <span class="icon-login">&nbsp;</span>
+                <span class="header__login-txt">ENTRAR</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SUB MENU WITH CATEGORIES -->
+      <section class="header__submenu">
+        <div class="header__submenu__carousel-button-wrapper">
+          <a href="javascript:;" class="slider__button slider__left" title="">&nbsp;</a>
+          <a href="javascript:;" class="slider__button slider__right" title="">&nbsp;</a>
+        </div>
+        <div class="header__submenu__content has-desktop-width">
+          <div class="header__submenu__content--item">
+            <a href="#últimas" title="ÚLTIMAS">ÚLTIMAS</a>
+          </div>
+          <div class="header__submenu__content--item">
+            <a href="#política" title="POLÍTICA">POLÍTICA</a>
+          </div>
+          <div class="header__submenu__content--item">
+            <a href="#esportes" title="ESPORTES">ESPORTES</a>
+          </div>
+          <div class="header__submenu__content--item">
+            <a href="#cidades" title="CIDADES">CIDADES</a>
+          </div>
+          <div class="header__submenu__content--item">
+            <a href="#economia" title="ECONOMIA">ECONOMIA</a>
+          </div>
+          <div class="header__submenu__content--item">
+            <a href="#entretenimento" title="ENTRETENIMENTO">ENTRETENIMENTO</a>
+          </div>
+          <div class="header__submenu__content--item">
+            <a href="#minas-s/a" title="MINAS S/A">MINAS S/A</a>
+          </div>
+          <div class="header__submenu__content--item">
+            <a href="#super-notícia" title="SUPER NOTÍCIA">SUPER NOTÍCIA</a>
+          </div>
+          <div class="header__submenu__content--item">
+            <a href="#data-tempo" title="DATA TEMPO">DATA TEMPO</a>
+          </div>
+          <div class="header__submenu__content--item">
+            <a href="#o tempo plus" title="O TEMPO PLUS">O TEMPO PLUS</a>
+          </div>
+          <div class="header__submenu__content--item">
+            <a href="#canal-o-tempo" title="CANAL O TEMPO">CANAL O TEMPO</a>
+          </div>
+          <div class="header__submenu__content--item mobile-display-none">|</div>
+
+          <!-- WEATHER -->
+          <div class="header__temp mobile-display-none">
+            <div class="header__temp-txt">
+              <span class="icon-temp">&nbsp;</span>
+              <span class="header__temp-rate">28°</span>
+              <span class="header__temp-city">Belo Horizonte</span>
+            </div>
+            <div class="header__menu-temp top">
+              <div class="header__temp--item">
+                <img class="header__temp--icon" src="clientlib-site/images/header/icon/temp-test.svg" />
+                <p class="header__temp--day">Seg</p>
+                <p class="header__temp--celsius">24°</p>
+              </div>
+              <div class="header__temp--item">
+                <img class="header__temp--icon" src="clientlib-site/images/header/icon/temp-test.svg" />
+                <p class="header__temp--day">Ter</p>
+                <p class="header__temp--celsius">21°</p>
+              </div>
+              <div class="header__temp--item">
+                <img class="header__temp--icon" src="clientlib-site/images/header/icon/temp-test.svg" />
+                <p class="header__temp--day">Qua</p>
+                <p class="header__temp--celsius">20°</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="header__foot">
+      <section class="header__submenu">
+        <div class="header__submenu__carousel-button-wrapper">
+          <a href="javascript:;" class="slider__button slider__left" title="">&nbsp;</a>
+          <a href="javascript:;" class="slider__button slider__right" title="">&nbsp;</a>
+        </div>
+        <div class="header__submenu__content has-desktop-width">
+          <div class="header__submenu__content--item">
+            <a href="#lorem" title="LOREM">ITEM DINAMICO 1</a>
+          </div>
+          <div class="header__submenu__content--item">
+            <a href="#lorem" title="LOREM">ITEM DINAMICO 2</a>
+          </div>
+          <div class="header__submenu__content--item">
+            <a href="#lorem" title="LOREM">ITEM DINAMICO 3</a>
+          </div>
+        </div>
+      </section>
+    </section>
+  </header>
+</body>
+</html>

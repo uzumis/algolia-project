@@ -1,0 +1,282 @@
+.amp-header__container {
+    font-weight: var(--#{$txt_prefix}-bold);
+    font-size: var(--#{$txt_prefix}-font-size-sm);
+    background: var(--#{$txt_prefix}-natural-primary);
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+}
+
+.amp-header__content {
+    display: flex;
+    width: 1280px;
+    height: 80px;
+    padding: 0px 80px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    justify-content: space-between;
+}
+
+@include check-event(amp-header__menu-dropdown, flex);
+
+.check__event {
+    &:checked {
+        ~ {
+            .amp-header__menu--button {
+                background-image: url(images/header/icon/x-close-white.svg);
+                background-size: 24px;
+            }
+
+            .sitemap__menu-title {
+                &::after {
+                    rotate: 180deg;
+                }
+            }
+        }
+    }
+}
+
+.amp-header__submenu__content--item {
+    a {
+        color: var(--#{$txt_prefix}-natural-primary);
+    }
+}
+
+.icon-amp-portal {
+    background: url(images/amp-header/otempo_amp_icon_portal.svg) center no-repeat transparent;
+    background-size: 20px;
+    padding: 12px;
+}
+
+.div-seta-amp {
+    background: url(images/amp-header/otempo_amp_seta.svg) center no-repeat transparent;
+    background-size: 20px;
+    padding: 12px;
+}
+
+.amp-header {
+    background-color: var(--#{$txt_prefix}-natural-primary);
+    width: 100%;
+    display: flex;
+    height: 80px;
+}
+
+.amp-header__submenu {
+    background-color: var(--#{$txt_prefix}-light-secondary);
+    color: var(--#{$txt_prefix}-header-submenu-font);
+    border-color: var(--#{$txt_prefix}-header-submenu-border);
+    border-style: solid;
+    border-width: 1px 0;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.amp-header__submenu__content {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    align-items: center;
+    height: 40px;
+}
+
+.amp-header__menu--button {
+    background: url(images/amp-header/otempo_amp-menu.svg) center no-repeat transparent;
+    border: none;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    z-index: 10;
+}
+
+.header__submenu__content--item {
+    a {
+        color: var(--#{$txt_prefix}-header-submenu-font);
+    }
+}
+
+.amp-header__logo {
+    background: url(images/amp-header/otempo_logo_white.svg) no-repeat center / contain;
+    height: var(--#{$txt_prefix}-header-logo-height);
+    display: block;
+}
+
+.submenu-amp {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon-amp-submenu-flecha {
+    background: url(images/header/icon/chevron-right.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.icon-amp-submenu {
+    background: url(images/header/icon/home-line.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.amp-header__menu-categorias {
+    width: 25%;
+    margin-right: 36%;
+    position: relative;
+    z-index: 10;
+}
+
+.amp-search {
+    text-align: center;
+    margin-top: var(--#{$txt_prefix}-header-menu-search-margin);
+}
+
+.amp-header__menu-dropdown {
+    padding: 24px;
+    max-width: 320px;
+    width: 100vw;
+    bottom: auto;
+    min-height: calc(100% - 79px);
+    max-height: fit-content;
+    margin-top: 80px;
+    // overflow-y: visible;
+    // -webkit-overflow-scrolling: touch;
+
+    .dropdown__bg,
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        min-height: calc(100% - 79px);
+    }
+
+    .dropdown__bg {
+        background: var(--#{$txt_prefix}-dark-tertiary);
+        margin-top: 43px;
+        opacity: 0.8;
+        width: 100vw;
+        display: inline-block;
+    }
+
+    &::after {
+        background: var(--#{$txt_prefix}-base-secondary);
+        z-index: 9;
+        max-width: 320px;
+    }
+
+    .assine__content {
+        position: relative;
+        z-index: 10;
+
+        .assine__button {
+            width: 100%;
+            display: inline-block;
+        }
+    }
+
+    /* Sitemap */
+    .sitemap__menu {
+        display: inline-block;
+        position: relative;
+        z-index: 10;
+        width: 100%;
+        padding: 24px 0 0;
+
+        .sitemap__menu-lateral {
+            width: 100%;
+            gap: 24px;
+            padding-bottom: 24px;
+        }
+
+        .sitemap__menu-categorias {
+            margin-bottom: 24px;
+            margin-right: 0;
+            width: auto;
+            height: auto;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        label.sitemap__menu-title {
+            padding-bottom: 8px;
+
+            &::after {
+                content: "";
+                background: url(images/header/icon/seta-baixo.svg) center no-repeat transparent;
+                display: inline-block;
+                height: 20px;
+                width: 20px;
+            }
+        }
+
+        .sitemap__menu-list {
+            padding: 8px;
+        }
+
+        .sitemap__menu-categorias-colunas {
+            font-size: var(--#{$txt_prefix}-font-size-md);
+            width: 100%;
+        }
+    }
+}
+
+
+
+.amp-header__menu-dropdown::-webkit-scrollbar {
+    display: none;
+    position: relative;
+    z-index: 1000;
+}
+
+.amp-header__menu-dropdown {
+    background-color: var(--#{$txt_prefix}-base-secondary);
+    margin-top: var(--#{$txt_prefix}-header-submenu-top);
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+    position: fixed;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    z-index: 1;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    bottom: 0;
+    max-height: calc(100vh - 79px);
+
+    .dropdown__bg {
+        display: none;
+    }
+
+    .assine__button {
+        display: none;
+    }
+
+    .footer__copyright {
+        padding: 12px 0;
+    }
+
+    .sitemap__menu {
+        padding-bottom: 32px;
+    }
+
+    .header__menu--bottom {
+        background-color: var(--#{$txt_prefix}-base-secondary);
+    }
+}

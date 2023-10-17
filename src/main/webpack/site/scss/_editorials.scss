@@ -1,0 +1,261 @@
+:root {
+  --#{$txt_prefix}-header-head-mobile: flex; //none/flex
+  --#{$txt_prefix}-header-foot: none; //none/inline
+  --#{$txt_prefix}-header-direction: column; //column/column-reverse
+
+  --#{$txt_prefix}-header-bg: var(--#{$txt_prefix}-base-secondary);
+  --#{$txt_prefix}-header-bg-submenu: var(--#{$txt_prefix}-natural-primary);
+  --#{$txt_prefix}-header-bg-submenu-mobile: var(--#{$txt_prefix}-base-secondary);
+
+  --#{$txt_prefix}-header-submenu-border: transparent;
+  --#{$txt_prefix}-header-submenu-display: flex;
+  --#{$txt_prefix}-header-submenu-font: var(--#{$txt_prefix}-base-secondary);
+  --#{$txt_prefix}-header-submenu-foot-font-mobile: var(--#{$txt_prefix}-dark-tertiary);
+  --#{$txt_prefix}-header-submenu-head-bg: var(--#{$txt_prefix}-natural-primary);
+  --#{$txt_prefix}-header-submenu-head-font: var(--#{$txt_prefix}-base-secondary);
+  --#{$txt_prefix}-header-submenu-head-font-mobile: var(--#{$txt_prefix}-dark-tertiary);
+  --#{$txt_prefix}-header-submenu-top: 80px;
+  --#{$txt_prefix}-header-submenu-top-header-small: 48px;
+
+  --#{$txt_prefix}-header-menu-close: url(images/header/icon/x-close.svg);
+  --#{$txt_prefix}-header-menu-search-margin: 10px;
+
+  --#{$txt_prefix}-header-logo: url(images/header/icon/o_tempo.svg);
+  --#{$txt_prefix}-header-logo-height: 32px;
+
+  --#{$txt_prefix}-header-icon-login: url(images/header/icon/entrar.svg);
+  --#{$txt_prefix}-header-icon-menu-button: url(images/header/icon/menu.svg);
+  --#{$txt_prefix}-header-icon-temp: url(images/header/icon/rain.svg);
+
+  --#{$txt_prefix}-header-login-button-bg: var(--#{$txt_prefix}-base-secondary);
+  --#{$txt_prefix}-header-login-button-color: var(--#{$txt_prefix}-dark-tertiary);
+
+  --#{$txt_prefix}-header-radio-font: var(--#{$txt_prefix}-base-secondary);
+  --#{$txt_prefix}-header-radio-bg: var(--#{$txt_prefix}-natural-primary);
+  --#{$txt_prefix}-header-radio-icon: url(images/header/icon/radio.svg);
+  --#{$txt_prefix}-header-radio-play: url(images/header/icon/play.svg);
+  --#{$txt_prefix}-header-radio-pause: url(images/header/logo/otempo__pause-circle-white.svg);
+
+  --#{$txt_prefix}-header-mobile-bg-radio: var(--#{$txt_prefix}-natural-primary);
+  --#{$txt_prefix}-header-mobile-foot: none;
+  --#{$txt_prefix}-header-mobile-icon-carousel: url(images/header/icon/chevron-down.svg);
+  --#{$txt_prefix}-header-mobile-icon-temperatura: url(images/header/icon/rain-green.svg);
+  --#{$txt_prefix}-header-mobile-logo: url(images/header/icon/o_tempo.svg);
+  --#{$txt_prefix}-header-mobile-shadow: var(--#{$txt_prefix}-base-secondary);
+}
+
+/* Variação: complementar */
+[class*=atualidades],
+[class*=autotempo],
+[class*=betim],
+[class*=blog],
+[class*=brasil],
+[class*=canalotempo],
+[class*=cidades],
+[class*=charges],
+[class*=contagem],
+[class*=datatempo],
+[class*=economia],
+[class*=editoriacolunas],
+[class*=entretenimento],
+[class*=fmotempo],
+[class*=gastronomia],
+[class*=mundo],
+[class*=politica],
+[class*=previsaodotempo],
+[class*=turismo],
+[class*=sports],
+[class*=supernoticia] {
+  --#{$txt_prefix}-header-icon-temp: url(images/header/icon/rain-grey.svg);
+  --#{$txt_prefix}-header-submenu-head-bg: var(--#{$txt_prefix}-blurry-tertiary);
+  --#{$txt_prefix}-header-submenu-head-font: var(--#{$txt_prefix}-dark-tertiary);
+  --#{$txt_prefix}-header-submenu-top: 120px;
+  --#{$txt_prefix}-header-head-mobile: none;
+  --#{$txt_prefix}-header-direction: column-reverse;
+  --#{$txt_prefix}-header-submenu-display: none;
+}
+[class*=betim],
+[class*=canalotempo],
+[class*=contagem],
+[class*=datatempo],
+[class*=fmotempo],
+[class*=sports],
+[class*=supernoticia] {
+  --#{$txt_prefix}-header-icon-login: url(images/header/icon/login-white.svg);
+  --#{$txt_prefix}-header-icon-menu-button: url(images/header/icon/hmbg-white.svg);
+  --#{$txt_prefix}-header-menu-close: url(images/header/icon/x-close-white.svg);
+  --#{$txt_prefix}-header-mobile-icon-temperatura: url(images/header/icon/temp-white.svg);
+  --#{$txt_prefix}-header-radio-icon: url(images/header/icon/91-7-green.svg);
+  --#{$txt_prefix}-header-radio-play: url(images/header/icon/radio-play-green.svg);
+  --#{$txt_prefix}-header-radio-pause: url(images/header/logo/otempo__pause-circle.svg);
+  --#{$txt_prefix}-header-mobile-bg-radio: var(--#{$txt_prefix}-base-secondary);
+  --#{$txt_prefix}-header-radio-font: var(--#{$txt_prefix}-natural-primary);
+  --#{$txt_prefix}-header-radio-bg: var(--#{$txt_prefix}-base-secondary);
+  --#{$txt_prefix}-header-login-button-bg: var(--#{$txt_prefix}-header-bg);
+  --#{$txt_prefix}-header-login-button-color: var(--#{$txt_prefix}-base-secondary);
+}
+
+[class*=canalotempo],
+[class*=sports] {
+  --#{$txt_prefix}-header-bg-submenu: var(--#{$txt_prefix}-header-bg);
+  --#{$txt_prefix}-header-mobile-shadow: var(--#{$txt_prefix}-header-bg);
+  --#{$txt_prefix}-header-mobile-icon-carousel: url(images/header/icon/chevron-down-white.svg);
+  --#{$txt_prefix}-header-bg-submenu-mobile: var(--#{$txt_prefix}-header-bg);
+  --#{$txt_prefix}-header-submenu-foot-font-mobile: var(--#{$txt_prefix}-header-submenu-font);
+  --#{$txt_prefix}-header-menu-search-margin: 20px;
+}
+
+[class*=atualidades],
+[class*=autotempo],
+[class*=blog],
+[class*=brasil],
+[class*=charges],
+[class*=editoriacolunas],
+[class*=entretenimento],
+[class*=economia],
+[class*=gastronomia],
+[class*=mundo],
+[class*=politica],
+[class*=previsaodotempo],
+[class*=turismo] {
+  --#{$txt_prefix}-header-bg-submenu-mobile: var(--#{$txt_prefix}-light-tertiary);
+  --#{$txt_prefix}-header-bg-submenu: var(--#{$txt_prefix}-light-tertiary);
+  --#{$txt_prefix}-header-submenu-border: var(--#{$txt_prefix}-light-secondary);
+  --#{$txt_prefix}-header-submenu-font: var(--#{$txt_prefix}-dark-tertiary);
+
+  .header__head {
+    border-bottom: 1px solid var(--#{$txt_prefix}-light-secondary);
+  }
+}
+
+[class*=canalotempo],
+[class*=cidades],
+[class*=sports] {
+  --#{$txt_prefix}-header-foot: inline;
+  --#{$txt_prefix}-header-mobile-foot: inline;
+}
+
+[class*=betim],
+[class*=contagem],
+[class*=fmotempo],
+[class*=supernoticia] {
+  --#{$txt_prefix}-header-logo-height: 42px;
+}
+
+[class*=datatempo],
+[class*=fmotempo] {
+  --#{$txt_prefix}-header-bg: var(--#{$txt_prefix}-natural-primary);
+}
+
+[class*=atualidades]{
+  --#{$txt_prefix}-header-logo: url(images/header/logo/otempo-atualidades.svg);
+  --#{$txt_prefix}-header-mobile-logo: url(images/header/logo/otempo-atualidades-mobile.svg);
+}
+
+[class*=autotempo] {
+  --#{$txt_prefix}-header-logo: url(images/header/logo/otempo-autotempo.svg);
+  --#{$txt_prefix}-header-mobile-logo: url(images/header/logo/otempo-autotempo-mobile.svg);
+}
+
+[class*=betim] {
+  --#{$txt_prefix}-header-logo: url(images/header/logo/otempo-betim.svg);
+  --#{$txt_prefix}-header-mobile-logo: var(--#{$txt_prefix}-header-logo);
+  --#{$txt_prefix}-header-bg: var(--#{$txt_prefix}-delicate-primary);
+}
+
+[class*=blog] {
+  --#{$txt_prefix}-header-logo: url(images/header/logo/otempo-blog.svg);
+  --#{$txt_prefix}-header-mobile-logo: url(images/header/logo/otempo-blog-mobile.svg);
+}
+
+[class*=brasil] {
+  --#{$txt_prefix}-header-logo: url(images/header/logo/otempo-brasil.svg);
+  --#{$txt_prefix}-header-mobile-logo: url(images/header/logo/otempo-brasil-mobile.svg);
+}
+
+[class*=canalotempo] {
+  --#{$txt_prefix}-header-logo: url(images/header/logo/otempo-canalotempo.svg);
+  --#{$txt_prefix}-header-mobile-logo: var(--#{$txt_prefix}-header-logo);
+  --#{$txt_prefix}-header-bg: var(--#{$txt_prefix}-dark-primary);
+  --#{$txt_prefix}-header-submenu-border: var(--#{$txt_prefix}-dark-secondary);
+}
+
+[class*=charges] {
+  --#{$txt_prefix}-header-logo: url(images/header/logo/otempo-charges.svg);
+  --#{$txt_prefix}-header-mobile-logo: url(images/header/logo/otempo-charges-mobile.svg);
+}
+
+[class*=contagem] {
+  --#{$txt_prefix}-header-logo: url(images/header/logo/otempo-contagem.svg);
+  --#{$txt_prefix}-header-mobile-logo: var(--#{$txt_prefix}-header-logo);
+  --#{$txt_prefix}-header-bg: var(--#{$txt_prefix}-contrast-primary);
+}
+
+[class*=cidades] {
+  --#{$txt_prefix}-header-logo: url(images/header/logo/otempo-cidades.svg);
+  --#{$txt_prefix}-header-mobile-logo: url(images/header/logo/otempo-cidades-mobile.svg);
+}
+
+[class*=datatempo] {
+  --#{$txt_prefix}-header-logo: url(images/header/logo/otempo-datatempo.svg);
+  --#{$txt_prefix}-header-mobile-logo: url(images/header/logo/otempo-datatempo-mobile.svg);
+}
+
+[class*=editoriacolunas] {
+  --#{$txt_prefix}-header-logo: url(images/header/logo/otempo-colunas.svg);
+  --#{$txt_prefix}-header-mobile-logo: url(images/header/logo/otempo-colunas-mobile.svg);
+}
+
+[class*=entretenimento] {
+  --#{$txt_prefix}-header-logo: url(images/header/logo/otempo-entretenimento.svg);
+  --#{$txt_prefix}-header-mobile-logo: url(images/header/logo/otempo-entretenimento-mobile.svg);
+}
+
+[class*=economia] {
+  --#{$txt_prefix}-header-logo: url(images/header/logo/otempo-economia.svg);
+  --#{$txt_prefix}-header-mobile-logo: url(images/header/logo/otempo-economia-mobile.svg);
+}
+
+[class*=fmotempo] {
+  --#{$txt_prefix}-header-logo: url(images/header/logo/otempo-fmotempo.svg);
+  --#{$txt_prefix}-header-mobile-logo: var(--#{$txt_prefix}-header-logo);
+}
+
+[class*=gastronomia] {
+  --#{$txt_prefix}-header-logo: url(images/header/logo/otempo-gastronomia.svg);
+  --#{$txt_prefix}-header-mobile-logo: url(images/header/logo/otempo-gastronomia-mobile.svg);
+}
+
+[class*=mundo] {
+  --#{$txt_prefix}-header-logo: url(images/header/logo/otempo-mundo.svg);
+  --#{$txt_prefix}-header-mobile-logo: url(images/header/logo/otempo-mundo-mobile.svg);
+}
+
+[class*=politica] {
+  --#{$txt_prefix}-header-logo: url(images/header/logo/otempo-politica.svg);
+  --#{$txt_prefix}-header-mobile-logo: url(images/header/logo/otempo-politica-mobile.svg);
+}
+
+[class*=previsaodotempo] {
+  --#{$txt_prefix}-header-logo: url(images/header/logo/otempo-previsaodotempo.svg);
+  --#{$txt_prefix}-header-mobile-logo: url(images/header/logo/otempo-previsaodotempo-mobile.svg);
+}
+
+[class*=sports] {
+  --#{$txt_prefix}-header-logo: url(images/header/logo/otempo-sports.svg);
+  --#{$txt_prefix}-header-mobile-logo: url(images/header/logo/otempo-sports-mobile.svg);
+  --#{$txt_prefix}-header-bg: var(--#{$txt_prefix}-pragmatic-primary);
+  --#{$txt_prefix}-header-submenu-border: var(--#{$txt_prefix}-pragmatic-secondary);
+  --#{$txt_prefix}-header-logo-height: 26px;
+}
+
+[class*=supernoticia] {
+  --#{$txt_prefix}-header-logo: url(images/header/logo/otempo-supernoticias.svg);
+  --#{$txt_prefix}-header-mobile-logo: var(--#{$txt_prefix}-header-logo);
+  --#{$txt_prefix}-header-bg: var(--#{$txt_prefix}-distinct-primary);
+}
+
+[class*=turismo] {
+  --#{$txt_prefix}-header-logo: url(images/header/logo/otempo-turismo.svg);
+  --#{$txt_prefix}-header-mobile-logo: url(images/header/logo/otempo-turismo-mobile.svg);
+}

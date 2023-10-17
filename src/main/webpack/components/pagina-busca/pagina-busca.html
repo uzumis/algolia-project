@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Página Busca</title>
+	<script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.10.5/dist/algoliasearch-lite.umd.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.53.0"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-plugin-recent-searches"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-plugin-query-suggestions"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-theme-classic" />
+
+</head>
+
+<body>
+	<div hidden id="brand-list"></div>
+
+	<div class="pagina-busca__layout">
+		<!-- COMPONENTE DE ADS COMEÇO -->
+		<div class="ad__post-header">
+
+			<span class="ads__container--item desktop">
+				<img src="clientlib-site/images/ads/1190x250.jpg" class="ads" alt="1190x250">
+			</span>
+			<span class="ads__container--item mobile">
+				<img src="clientlib-site/images/pagina-materia/mock-ad-320.svg" />
+			</span>
+		</div>
+		<!-- COMPONENTE DE ADS FIM -->
+		<div class="materia__container font-lato">
+
+			<div class="materia__wrapper">
+				<div class="aem-Grid aem-Grid--12">
+					<div class="aem-GridColumn aem-GridColumn--default--10 aem-GridColumn--phone--12">
+						<div class="breadcrump-container">
+							<!-- COMPONENTE DE BREADCRUMB COMEÇO -->
+							<div class="cmp__breadcrumb-divisor">
+								<ul class="breadcrumb__container">
+									<li><a href="#home"><img src="clientlib-site/images/icons/home-line.svg" /></a></li>
+									<li><a href="#home" title="home" class="breadcrumb__item">O Tempo</a></li>
+									<li><img src="clientlib-site/images/icons/chevron-right.svg" /></li>
+									<li><a href="#cidades" title="cidades"
+											class="breadcrumb__item subcategory">Resultado de busca</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="box-search">
+							<div class="autocomplete__prefs" id="autocomplete"></div>
+							</form>
+							<form action="#" class="search--dados">
+								<div class="ais__custom font-lato" id="date"></div>
+								<div class="ais__custom font-lato" id="editoria"></div>
+								<div class="ais__custom font-lato" id="autor"></div>
+
+								<div class="ais__custom font-lato" id="organizarpor"></div>
+								<div id="clear-refinements"></div>
+							</form>
+						</div>
+						<!-- PATROCINIO FIM-->
+					</div>
+				</div>
+				<div class="aem-Grid aem-Grid--12">
+					<div class="aem-GridColumn aem-GridColumn--default--1 desktop">
+						&nbsp;
+					</div>
+					<div class="aem-GridColumn aem-GridColumn--default--7 aem-GridColumn--phone--12 ">
+						<!-- COMEÇO - RESULTADOS - TITULO DA BUSCA  -->
+						<div class="search-title">
+							<div id="stats"></div>
+						</div>
+						<!-- FIM - RESULTADOS - TITULO DA BUSCA  -->
+
+						<!-- COMEÇO - RESULTADOS DA BUSCA  -->
+						<div id="hits" class="container"></div>
+						<!-- FIM - RESULTADOS DA BUSCA  -->
+
+						<!-- COMEÇO PAGINAÇÃO  -->
+						<div id="pagination"></div>
+						<!-- FIM PAGINAÇÃO  -->
+					</div>
+					<div class="cmp__divisor-container flex-mobile">
+						<span class="cmp__divisor-line"></span>
+						<span class="cmp__divisor-line"></span>
+					</div>
+					<div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12">
+						<div class="ad__container-side">
+							<span class="ad__wrapper-side desktop is--sticky"> <!-- COMPONENTE DE ADS LATERAL COMEÇO -->
+								<span class="ads__container--item desktop ">
+									<img class="" src="clientlib-site/images/ads/300x600.jpg" class="ads"
+										alt="1190x250">
+								</span>
+
+							</span>
+							<span class="ads__container--item mobile">
+								<img class="" src="clientlib-site/images/ads/300x250.jpg" class="ads" alt="300x250">
+							</span>
+							<!-- COMPONENTE DE ADS LATERAL FIM -->
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- COMPONENTE DE ADS COMEÇO -->
+		<div class="ad__post-header">
+
+			<span class="ads__container--item desktop">
+				<img src="clientlib-site/images/ads/1190x250.jpg" class="ads" alt="1190x250">
+			</span>
+			<span class="ads__container--item mobile">
+				<img src="clientlib-site/images/pagina-materia/mock-ad-320.svg" />
+			</span>
+		</div>
+		<!-- COMPONENTE DE ADS FIM -->
+
+	</div>
+
+	<div class="cmp__divisor-container flex">
+		<span class="cmp__divisor-line"></span>
+		<span class="cmp__divisor-line mobile"></span>
+	</div>
+
+</body>
+
+</html>
