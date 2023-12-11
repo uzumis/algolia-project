@@ -1,0 +1,91 @@
+{
+  "settings": {
+    "minWordSizefor1Typo": 4,
+    "minWordSizefor2Typos": 8,
+    "hitsPerPage": 20,
+    "maxValuesPerFacet": 100,
+    "searchableAttributes": null,
+    "numericAttributesToIndex": null,
+    "attributesToRetrieve": null,
+    "unretrievableAttributes": null,
+    "optionalWords": null,
+    "attributesForFaceting": [
+      "searchable(autor)",
+      "searchable(editoria)"
+    ],
+    "attributesToSnippet": null,
+    "attributesToHighlight": null,
+    "paginationLimitedTo": 1000,
+    "attributeForDistinct": null,
+    "exactOnSingleWordQuery": "attribute",
+    "ranking": [
+      "typo",
+      "geo",
+      "words",
+      "filters",
+      "proximity",
+      "attribute",
+      "exact",
+      "custom"
+    ],
+    "customRanking": null,
+    "separatorsToIndex": "",
+    "removeWordsIfNoResults": "none",
+    "queryType": "prefixLast",
+    "highlightPreTag": "<em>",
+    "highlightPostTag": "</em>",
+    "alternativesAsExact": [
+      "ignorePlurals",
+      "singleWordSynonym"
+    ],
+    "renderingContent": {
+      "facetOrdering": {
+        "facets": {
+          "order": [
+            "editoria",
+            "autor"
+          ]
+        },
+        "values": {
+          "autor": {
+            "sortRemainingBy": "alpha"
+          },
+          "editoria": {
+            "sortRemainingBy": "count"
+          }
+        }
+      }
+    }
+  },
+  "rules": [
+    {
+      "_metadata": {
+        "lastUpdate": 1693238304
+      },
+      "conditions": [
+        {
+          "anchoring": "contains",
+          "pattern": "{facet:autor}",
+          "alternatives": true
+        }
+      ],
+      "consequence": {
+        "userData": {
+          "desktop_image": "https://www.site.com/media/flowers.jpg",
+          "mobile_image": "https://www.site.com/media/flowers.jpg",
+          "url": "occasions/gifting-ideas/florist",
+          "position": "6",
+          "promotion_id": "Floristry",
+          "promotion_name": "Floristry",
+          "creative_name": "Floristry",
+          "location_id": "Floristry",
+          "destination_url": "occasions/gifting-ideas/florist"
+        },
+        "filterPromotes": true
+      },
+      "enabled": true,
+      "objectID": "qr-1693238032434"
+    }
+  ],
+  "synonyms": []
+}
