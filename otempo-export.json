@@ -1,91 +1,1561 @@
 {
-  "settings": {
-    "minWordSizefor1Typo": 4,
-    "minWordSizefor2Typos": 8,
-    "hitsPerPage": 20,
-    "maxValuesPerFacet": 100,
-    "searchableAttributes": null,
-    "numericAttributesToIndex": null,
-    "attributesToRetrieve": null,
-    "unretrievableAttributes": null,
-    "optionalWords": null,
-    "attributesForFaceting": [
-      "searchable(autor)",
-      "searchable(editoria)"
-    ],
-    "attributesToSnippet": null,
-    "attributesToHighlight": null,
-    "paginationLimitedTo": 1000,
-    "attributeForDistinct": null,
-    "exactOnSingleWordQuery": "attribute",
-    "ranking": [
-      "typo",
-      "geo",
-      "words",
-      "filters",
-      "proximity",
-      "attribute",
-      "exact",
-      "custom"
-    ],
-    "customRanking": null,
-    "separatorsToIndex": "",
-    "removeWordsIfNoResults": "none",
-    "queryType": "prefixLast",
-    "highlightPreTag": "<em>",
-    "highlightPostTag": "</em>",
-    "alternativesAsExact": [
-      "ignorePlurals",
-      "singleWordSynonym"
-    ],
-    "renderingContent": {
-      "facetOrdering": {
-        "facets": {
-          "order": [
-            "editoria",
-            "autor"
-          ]
+  "hits": [
+    {
+      "versal": "Últimas",
+      "titulo": "O Tempo News: Essa é a noticia mais recente",
+      "urlImagem": "http://dummyimage.com/500x300.png/990000/ffffff",
+      "linkDoArtigo": "http://mapy.cz/news/a/quis/aenean.json?est=noticias&risus=atualizacoes&auctor=instantaneas&sed=et&tristique=destaques&in=urgentes&tempus=informacao&sit=ultimahora",
+      "editoria": "O Tempo News",
+      "chamada": "Fique por dentro das últimas notícias mais importantes e recentes do momento.",
+      "autor": {
+        "lvl0": "Blogueiro",
+        "lvl1": "Blogueiro > Ana Rodrigues"
+      },
+      "date": "2023-08-17",
+      "date_timestamp": 1692371982,
+      "acessos": 92,
+      "objectID": "10605e06a5d4ff_dashboard_generated_id",
+      "_snippetResult": {
+        "versal": {
+          "value": "Últimas",
+          "matchLevel": "none"
         },
-        "values": {
-          "autor": {
-            "sortRemainingBy": "alpha"
+        "titulo": {
+          "value": "O Tempo News: Essa é a noticia mais recente",
+          "matchLevel": "none"
+        },
+        "urlImagem": {
+          "value": "http://dummyimage.com/500x300.png/990000/ffffff",
+          "matchLevel": "none"
+        },
+        "linkDoArtigo": {
+          "value": "http://mapy.cz/news/a/quis/aenean.json?est=noticias&risus=atualizacoes&auctor=instantaneas&sed=et&tristique=destaques&in=urgentes …",
+          "matchLevel": "none"
+        },
+        "editoria": {
+          "value": "O Tempo News",
+          "matchLevel": "none"
+        },
+        "chamada": {
+          "value": "Fique por dentro das últimas notícias mais importantes e recentes do momento.",
+          "matchLevel": "none"
+        },
+        "autor": {
+          "lvl0": {
+            "value": "Blogueiro",
+            "matchLevel": "none"
           },
-          "editoria": {
-            "sortRemainingBy": "count"
+          "lvl1": {
+            "value": "Blogueiro > Ana Rodrigues",
+            "matchLevel": "none"
           }
+        },
+        "date": {
+          "value": "2023-08-17",
+          "matchLevel": "none"
+        },
+        "date_timestamp": {
+          "value": "1692371982",
+          "matchLevel": "none"
+        },
+        "acessos": {
+          "value": "92",
+          "matchLevel": "none"
+        }
+      },
+      "_highlightResult": {
+        "versal": {
+          "value": "Últimas",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "titulo": {
+          "value": "O Tempo News: Essa é a noticia mais recente",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "urlImagem": {
+          "value": "http://dummyimage.com/500x300.png/990000/ffffff",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "linkDoArtigo": {
+          "value": "http://mapy.cz/news/a/quis/aenean.json?est=noticias&risus=atualizacoes&auctor=instantaneas&sed=et&tristique=destaques&in=urgentes&tempus=informacao&sit=ultimahora",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "editoria": {
+          "value": "O Tempo News",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "chamada": {
+          "value": "Fique por dentro das últimas notícias mais importantes e recentes do momento.",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "autor": {
+          "lvl0": {
+            "value": "Blogueiro",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "lvl1": {
+            "value": "Blogueiro > Ana Rodrigues",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        },
+        "date": {
+          "value": "2023-08-17",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "date_timestamp": {
+          "value": "1692371982",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "acessos": {
+          "value": "92",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      },
+      "_rankingInfo": {
+        "nbTypos": 0,
+        "firstMatchedWord": 0,
+        "proximityDistance": 0,
+        "userScore": 11,
+        "geoDistance": 0,
+        "geoPrecision": 0,
+        "nbExactWords": 0,
+        "words": 0,
+        "filters": 0
+      }
+    },
+    {
+      "versal": "Exploração",
+      "titulo": "Explorando Betim: Locais Imperdíveis",
+      "urlImagem": "http://dummyimage.com/250x150.png/2b8c3b/ffffff",
+      "linkDoArtigo": "http://mapy.cz/betim/a/dolor/ipsum.json?est=cidades&risus=exploracao&auctor=locais&sed=et&tristique=cultura&in=turismo&tempus=natureza&sit=atrações",
+      "editoria": "Betim",
+      "chamada": "Descubra os encantos e atrações imperdíveis de Betim.",
+      "autor": {
+        "lvl0": "Blogueiro",
+        "lvl1": "Blogueiro > João Silva"
+      },
+      "date": "2023-08-17",
+      "date_timestamp": 1692285582,
+      "acessos": 204,
+      "objectID": "7118d63105699_dashboard_generated_id",
+      "_snippetResult": {
+        "versal": {
+          "value": "Exploração",
+          "matchLevel": "none"
+        },
+        "titulo": {
+          "value": "Explorando Betim: Locais Imperdíveis",
+          "matchLevel": "none"
+        },
+        "urlImagem": {
+          "value": "http://dummyimage.com/250x150.png/2b8c3b/ffffff",
+          "matchLevel": "none"
+        },
+        "linkDoArtigo": {
+          "value": "http://mapy.cz/betim/a/dolor/ipsum.json?est=cidades&risus=exploracao&auctor=locais&sed=et&tristique=cultura&in=turismo …",
+          "matchLevel": "none"
+        },
+        "editoria": {
+          "value": "Betim",
+          "matchLevel": "none"
+        },
+        "chamada": {
+          "value": "Descubra os encantos e atrações imperdíveis de Betim.",
+          "matchLevel": "none"
+        },
+        "autor": {
+          "lvl0": {
+            "value": "Blogueiro",
+            "matchLevel": "none"
+          },
+          "lvl1": {
+            "value": "Blogueiro > João Silva",
+            "matchLevel": "none"
+          }
+        },
+        "date": {
+          "value": "2023-08-17",
+          "matchLevel": "none"
+        },
+        "date_timestamp": {
+          "value": "1692285582",
+          "matchLevel": "none"
+        },
+        "acessos": {
+          "value": "204",
+          "matchLevel": "none"
+        }
+      },
+      "_highlightResult": {
+        "versal": {
+          "value": "Exploração",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "titulo": {
+          "value": "Explorando Betim: Locais Imperdíveis",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "urlImagem": {
+          "value": "http://dummyimage.com/250x150.png/2b8c3b/ffffff",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "linkDoArtigo": {
+          "value": "http://mapy.cz/betim/a/dolor/ipsum.json?est=cidades&risus=exploracao&auctor=locais&sed=et&tristique=cultura&in=turismo&tempus=natureza&sit=atrações",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "editoria": {
+          "value": "Betim",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "chamada": {
+          "value": "Descubra os encantos e atrações imperdíveis de Betim.",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "autor": {
+          "lvl0": {
+            "value": "Blogueiro",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "lvl1": {
+            "value": "Blogueiro > João Silva",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        },
+        "date": {
+          "value": "2023-08-17",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "date_timestamp": {
+          "value": "1692285582",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "acessos": {
+          "value": "204",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      },
+      "_rankingInfo": {
+        "nbTypos": 0,
+        "firstMatchedWord": 0,
+        "proximityDistance": 0,
+        "userScore": 10,
+        "geoDistance": 0,
+        "geoPrecision": 0,
+        "nbExactWords": 0,
+        "words": 0,
+        "filters": 0
+      }
+    },
+    {
+      "versal": "Rapaz",
+      "titulo": "Notícia de uma semana atrás",
+      "urlImagem": "http://dummyimage.com/141x100.png/5fa2dd/ffffff",
+      "linkDoArtigo": "http://mapy.cz/morbi/a/ipsum/integer.json?est=faucibus&risus=orci&auctor=luctus&sed=et&tristique=ultrices&in=posuere&tempus=cubilia&sit=curae",
+      "editoria": "O Tempo News",
+      "chamada": "Phasellus in felis. Donec semper sapien a libero. Nam dui.",
+      "autor": {
+        "lvl0": "Blogueiro",
+        "lvl1": "Blogueiro > Caco Antibes"
+      },
+      "date": "2023-08-11",
+      "date_timestamp": 1691809200,
+      "acessos": 12,
+      "objectID": "d0b21ba6e80e7_dashboard_generated_id",
+      "_snippetResult": {
+        "versal": {
+          "value": "Rapaz",
+          "matchLevel": "none"
+        },
+        "titulo": {
+          "value": "Notícia de uma semana atrás",
+          "matchLevel": "none"
+        },
+        "urlImagem": {
+          "value": "http://dummyimage.com/141x100.png/5fa2dd/ffffff",
+          "matchLevel": "none"
+        },
+        "linkDoArtigo": {
+          "value": "http://mapy.cz/morbi/a/ipsum/integer.json?est=faucibus&risus=orci&auctor=luctus&sed=et&tristique=ultrices&in=posuere …",
+          "matchLevel": "none"
+        },
+        "editoria": {
+          "value": "O Tempo News",
+          "matchLevel": "none"
+        },
+        "chamada": {
+          "value": "Phasellus in felis. Donec semper sapien a libero. Nam dui.",
+          "matchLevel": "none"
+        },
+        "autor": {
+          "lvl0": {
+            "value": "Blogueiro",
+            "matchLevel": "none"
+          },
+          "lvl1": {
+            "value": "Blogueiro > Caco Antibes",
+            "matchLevel": "none"
+          }
+        },
+        "date": {
+          "value": "2023-08-11",
+          "matchLevel": "none"
+        },
+        "date_timestamp": {
+          "value": "1691809200",
+          "matchLevel": "none"
+        },
+        "acessos": {
+          "value": "12",
+          "matchLevel": "none"
+        }
+      },
+      "_highlightResult": {
+        "versal": {
+          "value": "Rapaz",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "titulo": {
+          "value": "Notícia de uma semana atrás",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "urlImagem": {
+          "value": "http://dummyimage.com/141x100.png/5fa2dd/ffffff",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "linkDoArtigo": {
+          "value": "http://mapy.cz/morbi/a/ipsum/integer.json?est=faucibus&risus=orci&auctor=luctus&sed=et&tristique=ultrices&in=posuere&tempus=cubilia&sit=curae",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "editoria": {
+          "value": "O Tempo News",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "chamada": {
+          "value": "Phasellus in felis. Donec semper sapien a libero. Nam dui.",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "autor": {
+          "lvl0": {
+            "value": "Blogueiro",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "lvl1": {
+            "value": "Blogueiro > Caco Antibes",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        },
+        "date": {
+          "value": "2023-08-11",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "date_timestamp": {
+          "value": "1691809200",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "acessos": {
+          "value": "12",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      },
+      "_rankingInfo": {
+        "nbTypos": 0,
+        "firstMatchedWord": 0,
+        "proximityDistance": 0,
+        "userScore": 9,
+        "geoDistance": 0,
+        "geoPrecision": 0,
+        "nbExactWords": 0,
+        "words": 0,
+        "filters": 0
+      }
+    },
+    {
+      "versal": "Só bagunça",
+      "titulo": "Notícia de um Outro Colunista",
+      "urlImagem": "http://dummyimage.com/141x100.png/5fa2dd/ffffff",
+      "linkDoArtigo": "http://mapy.cz/morbi/a/ipsum/integer.json?est=faucibus&risus=orci&auctor=luctus&sed=et&tristique=ultrices&in=posuere&tempus=cubilia&sit=curae",
+      "editoria": "Entretenimento",
+      "chamada": "Phasellus in felis. Donec semper sapien a libero. Nam dui.",
+      "autor": {
+        "lvl0": "Colunista",
+        "lvl1": "Colunista > Nelson Rubens"
+      },
+      "date": "2023-08-09",
+      "date_timestamp": 1691542058,
+      "acessos": 1,
+      "objectID": "956f4116ec0f8_dashboard_generated_id",
+      "_snippetResult": {
+        "versal": {
+          "value": "Só bagunça",
+          "matchLevel": "none"
+        },
+        "titulo": {
+          "value": "Notícia de um Outro Colunista",
+          "matchLevel": "none"
+        },
+        "urlImagem": {
+          "value": "http://dummyimage.com/141x100.png/5fa2dd/ffffff",
+          "matchLevel": "none"
+        },
+        "linkDoArtigo": {
+          "value": "http://mapy.cz/morbi/a/ipsum/integer.json?est=faucibus&risus=orci&auctor=luctus&sed=et&tristique=ultrices&in=posuere …",
+          "matchLevel": "none"
+        },
+        "editoria": {
+          "value": "Entretenimento",
+          "matchLevel": "none"
+        },
+        "chamada": {
+          "value": "Phasellus in felis. Donec semper sapien a libero. Nam dui.",
+          "matchLevel": "none"
+        },
+        "autor": {
+          "lvl0": {
+            "value": "Colunista",
+            "matchLevel": "none"
+          },
+          "lvl1": {
+            "value": "Colunista > Nelson Rubens",
+            "matchLevel": "none"
+          }
+        },
+        "date": {
+          "value": "2023-08-09",
+          "matchLevel": "none"
+        },
+        "date_timestamp": {
+          "value": "1691542058",
+          "matchLevel": "none"
+        },
+        "acessos": {
+          "value": "1",
+          "matchLevel": "none"
+        }
+      },
+      "_highlightResult": {
+        "versal": {
+          "value": "Só bagunça",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "titulo": {
+          "value": "Notícia de um Outro Colunista",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "urlImagem": {
+          "value": "http://dummyimage.com/141x100.png/5fa2dd/ffffff",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "linkDoArtigo": {
+          "value": "http://mapy.cz/morbi/a/ipsum/integer.json?est=faucibus&risus=orci&auctor=luctus&sed=et&tristique=ultrices&in=posuere&tempus=cubilia&sit=curae",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "editoria": {
+          "value": "Entretenimento",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "chamada": {
+          "value": "Phasellus in felis. Donec semper sapien a libero. Nam dui.",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "autor": {
+          "lvl0": {
+            "value": "Colunista",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "lvl1": {
+            "value": "Colunista > Nelson Rubens",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        },
+        "date": {
+          "value": "2023-08-09",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "date_timestamp": {
+          "value": "1691542058",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "acessos": {
+          "value": "1",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      },
+      "_rankingInfo": {
+        "nbTypos": 0,
+        "firstMatchedWord": 0,
+        "proximityDistance": 0,
+        "userScore": 8,
+        "geoDistance": 0,
+        "geoPrecision": 0,
+        "nbExactWords": 0,
+        "words": 0,
+        "filters": 0
+      }
+    },
+    {
+      "versal": "Só bagunça",
+      "titulo": "Notícia de um Outro Blogueiro (A MENOS POPULAR)",
+      "urlImagem": "http://dummyimage.com/141x100.png/5fa2dd/ffffff",
+      "linkDoArtigo": "http://mapy.cz/morbi/a/ipsum/integer.json?est=faucibus&risus=orci&auctor=luctus&sed=et&tristique=ultrices&in=posuere&tempus=cubilia&sit=curae",
+      "editoria": "Esportes",
+      "chamada": "Phasellus in felis. Donec semper sapien a libero. Nam dui.",
+      "autor": {
+        "lvl0": "Blogueiro",
+        "lvl1": "Blogueiro > Casimiro Receba"
+      },
+      "date": "2023-08-09",
+      "date_timestamp": 1691542058,
+      "acessos": 0,
+      "objectID": "1178e131c28a74_dashboard_generated_id",
+      "_snippetResult": {
+        "versal": {
+          "value": "Só bagunça",
+          "matchLevel": "none"
+        },
+        "titulo": {
+          "value": "Notícia de um Outro Blogueiro (A MENOS POPULAR)",
+          "matchLevel": "none"
+        },
+        "urlImagem": {
+          "value": "http://dummyimage.com/141x100.png/5fa2dd/ffffff",
+          "matchLevel": "none"
+        },
+        "linkDoArtigo": {
+          "value": "http://mapy.cz/morbi/a/ipsum/integer.json?est=faucibus&risus=orci&auctor=luctus&sed=et&tristique=ultrices&in=posuere …",
+          "matchLevel": "none"
+        },
+        "editoria": {
+          "value": "Esportes",
+          "matchLevel": "none"
+        },
+        "chamada": {
+          "value": "Phasellus in felis. Donec semper sapien a libero. Nam dui.",
+          "matchLevel": "none"
+        },
+        "autor": {
+          "lvl0": {
+            "value": "Blogueiro",
+            "matchLevel": "none"
+          },
+          "lvl1": {
+            "value": "Blogueiro > Casimiro Receba",
+            "matchLevel": "none"
+          }
+        },
+        "date": {
+          "value": "2023-08-09",
+          "matchLevel": "none"
+        },
+        "date_timestamp": {
+          "value": "1691542058",
+          "matchLevel": "none"
+        },
+        "acessos": {
+          "value": "0",
+          "matchLevel": "none"
+        }
+      },
+      "_highlightResult": {
+        "versal": {
+          "value": "Só bagunça",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "titulo": {
+          "value": "Notícia de um Outro Blogueiro (A MENOS POPULAR)",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "urlImagem": {
+          "value": "http://dummyimage.com/141x100.png/5fa2dd/ffffff",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "linkDoArtigo": {
+          "value": "http://mapy.cz/morbi/a/ipsum/integer.json?est=faucibus&risus=orci&auctor=luctus&sed=et&tristique=ultrices&in=posuere&tempus=cubilia&sit=curae",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "editoria": {
+          "value": "Esportes",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "chamada": {
+          "value": "Phasellus in felis. Donec semper sapien a libero. Nam dui.",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "autor": {
+          "lvl0": {
+            "value": "Blogueiro",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "lvl1": {
+            "value": "Blogueiro > Casimiro Receba",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        },
+        "date": {
+          "value": "2023-08-09",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "date_timestamp": {
+          "value": "1691542058",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "acessos": {
+          "value": "0",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      },
+      "_rankingInfo": {
+        "nbTypos": 0,
+        "firstMatchedWord": 0,
+        "proximityDistance": 0,
+        "userScore": 7,
+        "geoDistance": 0,
+        "geoPrecision": 0,
+        "nbExactWords": 0,
+        "words": 0,
+        "filters": 0
+      }
+    },
+    {
+      "versal": "luctus ultricies",
+      "titulo": "Notícia de 1 Mês Atrás",
+      "urlImagem": "http://dummyimage.com/122x100.png/ff4444/ffffff",
+      "linkDoArtigo": "http://reference.com/mus/vivamus/vestibulum/sagittis.aspx?nascetur=rhoncus&ridiculus=mauris&mus=enim&etiam=leo&vel=rhoncus&augue=sed&vestibulum=vestibulum&rutrum=sit&rutrum=amet&neque=cursus&aenean=id&auctor=turpis&gravida=integer&sem=aliquet&praesent=massa&id=id&massa=lobortis&id=convallis&nisl=tortor&venenatis=risus&lacinia=dapibus&aenean=augue&sit=vel&amet=accumsan&justo=tellus&morbi=nisi&ut=eu&odio=orci&cras=mauris&mi=lacinia&pede=sapien&malesuada=quis&in=libero&imperdiet=nullam&et=sit&commodo=amet&vulputate=turpis&justo=elementum&in=ligula&blandit=vehicula&ultrices=consequat",
+      "editoria": "Contagem",
+      "chamada": "Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.\n\nMorbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.",
+      "autor": {
+        "lvl0": "Redator",
+        "lvl1": "Redator > Redato Aragão"
+      },
+      "date": "2023-07-16",
+      "date_timestamp": 1689468458,
+      "acessos": 23,
+      "objectID": "13ab6aef9e0783_dashboard_generated_id",
+      "_snippetResult": {
+        "versal": {
+          "value": "luctus ultricies",
+          "matchLevel": "none"
+        },
+        "titulo": {
+          "value": "Notícia de 1 Mês Atrás",
+          "matchLevel": "none"
+        },
+        "urlImagem": {
+          "value": "http://dummyimage.com/122x100.png/ff4444/ffffff",
+          "matchLevel": "none"
+        },
+        "linkDoArtigo": {
+          "value": "http://reference.com/mus/vivamus/vestibulum/sagittis.aspx?nascetur=rhoncus&ridiculus=mauris&mus=enim&etiam=leo&vel=rhoncus&augue=sed …",
+          "matchLevel": "none"
+        },
+        "editoria": {
+          "value": "Contagem",
+          "matchLevel": "none"
+        },
+        "chamada": {
+          "value": "Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.\n\nMorbi porttitor lorem id ligula. Suspendisse …",
+          "matchLevel": "none"
+        },
+        "autor": {
+          "lvl0": {
+            "value": "Redator",
+            "matchLevel": "none"
+          },
+          "lvl1": {
+            "value": "Redator > Redato Aragão",
+            "matchLevel": "none"
+          }
+        },
+        "date": {
+          "value": "2023-07-16",
+          "matchLevel": "none"
+        },
+        "date_timestamp": {
+          "value": "1689468458",
+          "matchLevel": "none"
+        },
+        "acessos": {
+          "value": "23",
+          "matchLevel": "none"
+        }
+      },
+      "_highlightResult": {
+        "versal": {
+          "value": "luctus ultricies",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "titulo": {
+          "value": "Notícia de 1 Mês Atrás",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "urlImagem": {
+          "value": "http://dummyimage.com/122x100.png/ff4444/ffffff",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "linkDoArtigo": {
+          "value": "http://reference.com/mus/vivamus/vestibulum/sagittis.aspx?nascetur=rhoncus&ridiculus=mauris&mus=enim&etiam=leo&vel=rhoncus&augue=sed&vestibulum=vestibulum&rutrum=sit&rutrum=amet&neque=cursus&aenean=id&auctor=turpis&gravida=integer&sem=aliquet&praesent=massa&id=id&massa=lobortis&id=convallis&nisl=tortor&venenatis=risus&lacinia=dapibus&aenean=augue&sit=vel&amet=accumsan&justo=tellus&morbi=nisi&ut=eu&odio=orci&cras=mauris&mi=lacinia&pede=sapien&malesuada=quis&in=libero&imperdiet=nullam&et=sit&commodo=amet&vulputate=turpis&justo=elementum&in=ligula&blandit=vehicula&ultrices=consequat",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "editoria": {
+          "value": "Contagem",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "chamada": {
+          "value": "Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.\n\nMorbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "autor": {
+          "lvl0": {
+            "value": "Redator",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "lvl1": {
+            "value": "Redator > Redato Aragão",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        },
+        "date": {
+          "value": "2023-07-16",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "date_timestamp": {
+          "value": "1689468458",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "acessos": {
+          "value": "23",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      },
+      "_rankingInfo": {
+        "nbTypos": 0,
+        "firstMatchedWord": 0,
+        "proximityDistance": 0,
+        "userScore": 6,
+        "geoDistance": 0,
+        "geoPrecision": 0,
+        "nbExactWords": 0,
+        "words": 0,
+        "filters": 0
+      }
+    },
+    {
+      "versal": "Descoberta",
+      "titulo": "Cidades Encantadoras: Descobrindo o Brasil",
+      "urlImagem": "http://dummyimage.com/200x200.png/cc3377/ffffff",
+      "linkDoArtigo": "http://mapy.cz/cidades/a/sit/amet.json?est=viagem&risus=exploracao&auctor=locais&sed=et&tristique=cultura&in=turismo&tempus=natureza&sit=paisagens",
+      "editoria": "Cidades",
+      "chamada": "Descubra os encantos e histórias das cidades brasileiras.",
+      "autor": {
+        "lvl0": "Colunista",
+        "lvl1": "Colunista > Maria Souza"
+      },
+      "date": "2023-07-18",
+      "date_timestamp": 1687161258,
+      "objectID": "2df46397d5d04_dashboard_generated_id",
+      "_snippetResult": {
+        "versal": {
+          "value": "Descoberta",
+          "matchLevel": "none"
+        },
+        "titulo": {
+          "value": "Cidades Encantadoras: Descobrindo o Brasil",
+          "matchLevel": "none"
+        },
+        "urlImagem": {
+          "value": "http://dummyimage.com/200x200.png/cc3377/ffffff",
+          "matchLevel": "none"
+        },
+        "linkDoArtigo": {
+          "value": "http://mapy.cz/cidades/a/sit/amet.json?est=viagem&risus=exploracao&auctor=locais&sed=et&tristique=cultura&in=turismo …",
+          "matchLevel": "none"
+        },
+        "editoria": {
+          "value": "Cidades",
+          "matchLevel": "none"
+        },
+        "chamada": {
+          "value": "Descubra os encantos e histórias das cidades brasileiras.",
+          "matchLevel": "none"
+        },
+        "autor": {
+          "lvl0": {
+            "value": "Colunista",
+            "matchLevel": "none"
+          },
+          "lvl1": {
+            "value": "Colunista > Maria Souza",
+            "matchLevel": "none"
+          }
+        },
+        "date": {
+          "value": "2023-07-18",
+          "matchLevel": "none"
+        },
+        "date_timestamp": {
+          "value": "1687161258",
+          "matchLevel": "none"
+        }
+      },
+      "_highlightResult": {
+        "versal": {
+          "value": "Descoberta",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "titulo": {
+          "value": "Cidades Encantadoras: Descobrindo o Brasil",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "urlImagem": {
+          "value": "http://dummyimage.com/200x200.png/cc3377/ffffff",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "linkDoArtigo": {
+          "value": "http://mapy.cz/cidades/a/sit/amet.json?est=viagem&risus=exploracao&auctor=locais&sed=et&tristique=cultura&in=turismo&tempus=natureza&sit=paisagens",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "editoria": {
+          "value": "Cidades",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "chamada": {
+          "value": "Descubra os encantos e histórias das cidades brasileiras.",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "autor": {
+          "lvl0": {
+            "value": "Colunista",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "lvl1": {
+            "value": "Colunista > Maria Souza",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        },
+        "date": {
+          "value": "2023-07-18",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "date_timestamp": {
+          "value": "1687161258",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      },
+      "_rankingInfo": {
+        "nbTypos": 0,
+        "firstMatchedWord": 0,
+        "proximityDistance": 0,
+        "userScore": 5,
+        "geoDistance": 0,
+        "geoPrecision": 0,
+        "nbExactWords": 0,
+        "words": 0,
+        "filters": 0
+      }
+    },
+    {
+      "versal": "Eventos",
+      "titulo": "Entretenimento em Destaque: Eventos e Diversão",
+      "urlImagem": "http://dummyimage.com/400x250.png/3366aa/ffffff",
+      "linkDoArtigo": "http://mapy.cz/entretenimento/a/dolor/ipsum.json?est=diversao&risus=eventos&auctor=cultura&sed=et&tristique=shows&in=festivais&tempus=arte&sit=música",
+      "editoria": "Entretenimento",
+      "chamada": "Fique por dentro dos eventos mais incríveis de entretenimento.",
+      "autor": {
+        "lvl0": "Redator",
+        "lvl1": "Redator > Marina Oliveira"
+      },
+      "date": "2022-08-17",
+      "date_timestamp": 1679228058,
+      "acessos": 200,
+      "objectID": "19f326c9710a30_dashboard_generated_id",
+      "_snippetResult": {
+        "versal": {
+          "value": "Eventos",
+          "matchLevel": "none"
+        },
+        "titulo": {
+          "value": "Entretenimento em Destaque: Eventos e Diversão",
+          "matchLevel": "none"
+        },
+        "urlImagem": {
+          "value": "http://dummyimage.com/400x250.png/3366aa/ffffff",
+          "matchLevel": "none"
+        },
+        "linkDoArtigo": {
+          "value": "http://mapy.cz/entretenimento/a/dolor/ipsum.json?est=diversao&risus=eventos&auctor=cultura&sed=et&tristique=shows&in=festivais …",
+          "matchLevel": "none"
+        },
+        "editoria": {
+          "value": "Entretenimento",
+          "matchLevel": "none"
+        },
+        "chamada": {
+          "value": "Fique por dentro dos eventos mais incríveis de entretenimento.",
+          "matchLevel": "none"
+        },
+        "autor": {
+          "lvl0": {
+            "value": "Redator",
+            "matchLevel": "none"
+          },
+          "lvl1": {
+            "value": "Redator > Marina Oliveira",
+            "matchLevel": "none"
+          }
+        },
+        "date": {
+          "value": "2022-08-17",
+          "matchLevel": "none"
+        },
+        "date_timestamp": {
+          "value": "1679228058",
+          "matchLevel": "none"
+        },
+        "acessos": {
+          "value": "200",
+          "matchLevel": "none"
+        }
+      },
+      "_highlightResult": {
+        "versal": {
+          "value": "Eventos",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "titulo": {
+          "value": "Entretenimento em Destaque: Eventos e Diversão",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "urlImagem": {
+          "value": "http://dummyimage.com/400x250.png/3366aa/ffffff",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "linkDoArtigo": {
+          "value": "http://mapy.cz/entretenimento/a/dolor/ipsum.json?est=diversao&risus=eventos&auctor=cultura&sed=et&tristique=shows&in=festivais&tempus=arte&sit=música",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "editoria": {
+          "value": "Entretenimento",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "chamada": {
+          "value": "Fique por dentro dos eventos mais incríveis de entretenimento.",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "autor": {
+          "lvl0": {
+            "value": "Redator",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "lvl1": {
+            "value": "Redator > Marina Oliveira",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        },
+        "date": {
+          "value": "2022-08-17",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "date_timestamp": {
+          "value": "1679228058",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "acessos": {
+          "value": "200",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      },
+      "_rankingInfo": {
+        "nbTypos": 0,
+        "firstMatchedWord": 0,
+        "proximityDistance": 0,
+        "userScore": 4,
+        "geoDistance": 0,
+        "geoPrecision": 0,
+        "nbExactWords": 0,
+        "words": 0,
+        "filters": 0
+      }
+    },
+    {
+      "versal": "Riquezas",
+      "titulo": "Contagem: Riquezas e Atrações da Cidade (A SEGUNDA MAIS POPULAR)",
+      "urlImagem": "http://dummyimage.com/300x200.png/ee7733/ffffff",
+      "linkDoArtigo": "http://mapy.cz/contagem/a/morbi/sed.json?est=cidades&risus=exploracao&auctor=locais&sed=et&tristique=cultura&in=turismo&tempus=natureza&sit=paisagens",
+      "editoria": "Contagem",
+      "chamada": "Explore as riquezas e atrações únicas da cidade de Contagem.",
+      "autor": {
+        "lvl0": "Redator",
+        "lvl1": "Redator > Pedro Alves"
+      },
+      "date": "2023-05-19",
+      "date_timestamp": 1679169258,
+      "acessos": 800,
+      "objectID": "107c6187c071c0_dashboard_generated_id",
+      "_snippetResult": {
+        "versal": {
+          "value": "Riquezas",
+          "matchLevel": "none"
+        },
+        "titulo": {
+          "value": "Contagem: Riquezas e Atrações da Cidade (A SEGUNDA MAIS POPULAR)",
+          "matchLevel": "none"
+        },
+        "urlImagem": {
+          "value": "http://dummyimage.com/300x200.png/ee7733/ffffff",
+          "matchLevel": "none"
+        },
+        "linkDoArtigo": {
+          "value": "http://mapy.cz/contagem/a/morbi/sed.json?est=cidades&risus=exploracao&auctor=locais&sed=et&tristique=cultura&in=turismo …",
+          "matchLevel": "none"
+        },
+        "editoria": {
+          "value": "Contagem",
+          "matchLevel": "none"
+        },
+        "chamada": {
+          "value": "Explore as riquezas e atrações únicas da cidade de Contagem.",
+          "matchLevel": "none"
+        },
+        "autor": {
+          "lvl0": {
+            "value": "Redator",
+            "matchLevel": "none"
+          },
+          "lvl1": {
+            "value": "Redator > Pedro Alves",
+            "matchLevel": "none"
+          }
+        },
+        "date": {
+          "value": "2023-05-19",
+          "matchLevel": "none"
+        },
+        "date_timestamp": {
+          "value": "1679169258",
+          "matchLevel": "none"
+        },
+        "acessos": {
+          "value": "800",
+          "matchLevel": "none"
+        }
+      },
+      "_highlightResult": {
+        "versal": {
+          "value": "Riquezas",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "titulo": {
+          "value": "Contagem: Riquezas e Atrações da Cidade (A SEGUNDA MAIS POPULAR)",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "urlImagem": {
+          "value": "http://dummyimage.com/300x200.png/ee7733/ffffff",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "linkDoArtigo": {
+          "value": "http://mapy.cz/contagem/a/morbi/sed.json?est=cidades&risus=exploracao&auctor=locais&sed=et&tristique=cultura&in=turismo&tempus=natureza&sit=paisagens",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "editoria": {
+          "value": "Contagem",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "chamada": {
+          "value": "Explore as riquezas e atrações únicas da cidade de Contagem.",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "autor": {
+          "lvl0": {
+            "value": "Redator",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "lvl1": {
+            "value": "Redator > Pedro Alves",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        },
+        "date": {
+          "value": "2023-05-19",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "date_timestamp": {
+          "value": "1679169258",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "acessos": {
+          "value": "800",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      },
+      "_rankingInfo": {
+        "nbTypos": 0,
+        "firstMatchedWord": 0,
+        "proximityDistance": 0,
+        "userScore": 3,
+        "geoDistance": 0,
+        "geoPrecision": 0,
+        "nbExactWords": 0,
+        "words": 0,
+        "filters": 0
+      }
+    },
+    {
+      "versal": "Salvador da Pátria",
+      "titulo": "Notícia de um ano atrás",
+      "urlImagem": "http://dummyimage.com/141x100.png/5fa2dd/ffffff",
+      "linkDoArtigo": "http://mapy.cz/morbi/a/ipsum/integer.json?est=faucibus&risus=orci&auctor=luctus&sed=et&tristique=ultrices&in=posuere&tempus=cubilia&sit=curae",
+      "editoria": "Cidades",
+      "chamada": "Phasellus in felis. Donec semper sapien a libero. Nam dui.",
+      "autor": {
+        "lvl0": "Redator",
+        "lvl1": "Redator > Sasá Mutema"
+      },
+      "date": "2022-08-16",
+      "date_timestamp": 1660610858,
+      "acessos": 40,
+      "objectID": "1c73d72fc421bc_dashboard_generated_id",
+      "_snippetResult": {
+        "versal": {
+          "value": "Salvador da Pátria",
+          "matchLevel": "none"
+        },
+        "titulo": {
+          "value": "Notícia de um ano atrás",
+          "matchLevel": "none"
+        },
+        "urlImagem": {
+          "value": "http://dummyimage.com/141x100.png/5fa2dd/ffffff",
+          "matchLevel": "none"
+        },
+        "linkDoArtigo": {
+          "value": "http://mapy.cz/morbi/a/ipsum/integer.json?est=faucibus&risus=orci&auctor=luctus&sed=et&tristique=ultrices&in=posuere …",
+          "matchLevel": "none"
+        },
+        "editoria": {
+          "value": "Cidades",
+          "matchLevel": "none"
+        },
+        "chamada": {
+          "value": "Phasellus in felis. Donec semper sapien a libero. Nam dui.",
+          "matchLevel": "none"
+        },
+        "autor": {
+          "lvl0": {
+            "value": "Redator",
+            "matchLevel": "none"
+          },
+          "lvl1": {
+            "value": "Redator > Sasá Mutema",
+            "matchLevel": "none"
+          }
+        },
+        "date": {
+          "value": "2022-08-16",
+          "matchLevel": "none"
+        },
+        "date_timestamp": {
+          "value": "1660610858",
+          "matchLevel": "none"
+        },
+        "acessos": {
+          "value": "40",
+          "matchLevel": "none"
+        }
+      },
+      "_highlightResult": {
+        "versal": {
+          "value": "Salvador da Pátria",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "titulo": {
+          "value": "Notícia de um ano atrás",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "urlImagem": {
+          "value": "http://dummyimage.com/141x100.png/5fa2dd/ffffff",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "linkDoArtigo": {
+          "value": "http://mapy.cz/morbi/a/ipsum/integer.json?est=faucibus&risus=orci&auctor=luctus&sed=et&tristique=ultrices&in=posuere&tempus=cubilia&sit=curae",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "editoria": {
+          "value": "Cidades",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "chamada": {
+          "value": "Phasellus in felis. Donec semper sapien a libero. Nam dui.",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "autor": {
+          "lvl0": {
+            "value": "Redator",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "lvl1": {
+            "value": "Redator > Sasá Mutema",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        },
+        "date": {
+          "value": "2022-08-16",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "date_timestamp": {
+          "value": "1660610858",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "acessos": {
+          "value": "40",
+          "matchLevel": "none",
+          "matchedWords": []
+        }
+      },
+      "_rankingInfo": {
+        "nbTypos": 0,
+        "firstMatchedWord": 0,
+        "proximityDistance": 0,
+        "userScore": 2,
+        "geoDistance": 0,
+        "geoPrecision": 0,
+        "nbExactWords": 0,
+        "words": 0,
+        "filters": 0
+      }
+    }
+  ],
+  "nbHits": 12,
+  "page": 0,
+  "nbPages": 2,
+  "hitsPerPage": 10,
+  "facets": {
+    "editoria": {
+      "Betim": 2,
+      "Cidades": 2,
+      "Contagem": 2,
+      "Entretenimento": 2,
+      "Esportes": 2,
+      "O Tempo News": 2
+    },
+    "autor.lvl0": {
+      "Blogueiro": 4,
+      "Colunista": 4,
+      "Redator": 4
+    },
+    "autor.lvl1": {
+      "Blogueiro > Ana Rodrigues": 1,
+      "Blogueiro > Caco Antibes": 1,
+      "Blogueiro > Casimiro Receba": 1,
+      "Blogueiro > João Silva": 1,
+      "Colunista > André Santos": 1,
+      "Colunista > Carol Colunas": 1,
+      "Colunista > Maria Souza": 1,
+      "Colunista > Nelson Rubens": 1,
+      "Redator > Marina Oliveira": 1,
+      "Redator > Pedro Alves": 1,
+      "Redator > Redato Aragão": 1,
+      "Redator > Sasá Mutema": 1
+    },
+    "date_timestamp": {
+      "1647534058": 1,
+      "1660610858": 2,
+      "1679169258": 1,
+      "1679228058": 1,
+      "1687161258": 1,
+      "1689468458": 1,
+      "1691542058": 2,
+      "1691809200": 1,
+      "1692285582": 1,
+      "1692371982": 1
+    }
+  },
+  "facets_stats": {
+    "date_timestamp": {
+      "min": 1647534058,
+      "max": 1692371982,
+      "avg": 1680277807,
+      "sum": 20163333686
+    }
+  },
+  "exhaustiveFacetsCount": true,
+  "exhaustiveNbHits": true,
+  "exhaustiveTypo": true,
+  "exhaustive": {
+    "facetsCount": true,
+    "nbHits": true,
+    "typo": true
+  },
+  "query": "",
+  "params": "analytics=false&attributesToRetrieve=%5B%22*%22%5D&attributesToSnippet=%5B%22*%3A20%22%5D&enableABTest=false&explain=%5B%22*%22%5D&facets=%5B%22*%22%5D&getRankingInfo=true&highlightPostTag=%3C%2Fais-highlight-0%3E&highlightPreTag=%3Cais-highlight-0%3E&hitsPerPage=10&maxValuesPerFacet=100&page=0&query=&responseFields=%5B%22*%22%5D&snippetEllipsisText=%E2%80%A6&tagFilters=",
+  "index": "lorem_NAME",
+  "serverUsed": "c7-use-1.algolia.net",
+  "indexUsed": "lorem_NAME",
+  "parsedQuery": "",
+  "timeoutCounts": false,
+  "timeoutHits": false,
+  "explain": {
+    "match": {
+      "alternatives": []
+    },
+    "params": {
+      "client": {
+        "query": "",
+        "analytics": false,
+        "page": 0,
+        "hitsPerPage": 10,
+        "attributesToRetrieve": [
+          "*"
+        ],
+        "attributesToSnippet": [
+          "*:20"
+        ],
+        "getRankingInfo": true,
+        "highlightPreTag": "<em>",
+        "highlightPostTag": "</em>",
+        "snippetEllipsisText": "…",
+        "tagFilters": [],
+        "facets": [
+          "*"
+        ],
+        "maxValuesPerFacet": 100,
+        "responseFields": [
+          "exhaustive",
+          "exhaustiveFacetValues",
+          "facets_stats",
+          "extensions",
+          "renderingContent",
+          "userData",
+          "aroundLatLng",
+          "queryAfterRemoval",
+          "exhaustiveFacetsCount",
+          "length",
+          "params",
+          "processingTimingsMS",
+          "facets",
+          "offset",
+          "hitsPerPage",
+          "automaticRadius",
+          "processingTimeMS",
+          "nbPages",
+          "page",
+          "query",
+          "serverTimeMS",
+          "index",
+          "exhaustiveTypo",
+          "nbHits",
+          "exhaustiveNbHits",
+          "hits"
+        ],
+        "enableABTest": false,
+        "explain": true
+      },
+      "apiKey": {},
+      "abTest": {},
+      "rules": {},
+      "final": {
+        "query": "",
+        "analytics": false,
+        "page": 0,
+        "hitsPerPage": 10,
+        "attributesToRetrieve": [
+          "*"
+        ],
+        "attributesToSnippet": [
+          "*:20"
+        ],
+        "getRankingInfo": true,
+        "highlightPreTag": "<em>",
+        "highlightPostTag": "</em>",
+        "snippetEllipsisText": "…",
+        "tagFilters": [],
+        "facets": [
+          "*"
+        ],
+        "maxValuesPerFacet": 100,
+        "responseFields": [
+          "exhaustive",
+          "exhaustiveFacetValues",
+          "facets_stats",
+          "extensions",
+          "renderingContent",
+          "userData",
+          "aroundLatLng",
+          "queryAfterRemoval",
+          "exhaustiveFacetsCount",
+          "length",
+          "params",
+          "processingTimingsMS",
+          "facets",
+          "offset",
+          "hitsPerPage",
+          "automaticRadius",
+          "processingTimeMS",
+          "nbPages",
+          "page",
+          "query",
+          "serverTimeMS",
+          "index",
+          "exhaustiveTypo",
+          "nbHits",
+          "exhaustiveNbHits",
+          "hits"
+        ],
+        "enableABTest": false,
+        "explain": true
+      }
+    }
+  },
+  "renderingContent": {
+    "facetOrdering": {
+      "facets": {
+        "order": [
+          "editoria",
+          "autor.lvl0",
+          "autor.lvl1",
+          "autor"
+        ]
+      },
+      "values": {
+        "autor": {
+          "sortRemainingBy": "count"
+        },
+        "autor.lvl0": {
+          "sortRemainingBy": "alpha"
+        },
+        "autor.lvl1": {
+          "sortRemainingBy": "alpha"
+        },
+        "editoria": {
+          "sortRemainingBy": "count"
         }
       }
     }
   },
-  "rules": [
-    {
-      "_metadata": {
-        "lastUpdate": 1693238304
+  "processingTimeMS": 4,
+  "processingTimingsMS": {
+    "_request": {
+      "roundTrip": 183
+    },
+    "afterFetch": {
+      "format": {
+        "total": 1
       },
-      "conditions": [
-        {
-          "anchoring": "contains",
-          "pattern": "{facet:autor}",
-          "alternatives": true
-        }
-      ],
-      "consequence": {
-        "userData": {
-          "desktop_image": "https://www.site.com/media/flowers.jpg",
-          "mobile_image": "https://www.site.com/media/flowers.jpg",
-          "url": "occasions/gifting-ideas/florist",
-          "position": "6",
-          "promotion_id": "Floristry",
-          "promotion_name": "Floristry",
-          "creative_name": "Floristry",
-          "location_id": "Floristry",
-          "destination_url": "occasions/gifting-ideas/florist"
-        },
-        "filterPromotes": true
+      "total": 1
+    },
+    "getIdx": {
+      "load": {
+        "total": 1
       },
-      "enabled": true,
-      "objectID": "qr-1693238032434"
-    }
-  ],
-  "synonyms": []
+      "total": 2
+    },
+    "total": 4
+  },
+  "serverTimeMS": 4
 }
